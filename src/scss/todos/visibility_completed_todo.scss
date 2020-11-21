@@ -1,0 +1,27 @@
+.visible-completed-todos-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.visible-completed-todos-button {
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 2px 10px;
+    background-color: rgb(153, 146, 146);
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.eye-visible {
+    font-size: 23px;
+    text-decoration: line-through;;
+}
+
+.eye-not-visible {
+
+}

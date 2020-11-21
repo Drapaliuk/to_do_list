@@ -1,0 +1,35 @@
+.new-todo-list-name {
+    border: none;
+    border-left: 1px solid #0077c8;
+    border-bottom: 1px solid #0077c8;
+    border-top: 1px solid #0077c8;
+    outline: none;
+    padding: 4px 3px 4px 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.confirm-block {
+    display: flex;
+    height: 100%;
+    padding: 3px;
+    border: 1px solid #0077c8;
+    border-left: 0;
+}
+
+.confirm,
+.decline {
+    outline: none;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.confirm:hover {
+    background-color: #0077c8;
+}
+
+.decline:hover {
+    background-color: #e4002b;;
+}

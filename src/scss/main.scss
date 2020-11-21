@@ -1,4 +1,22 @@
 @import './common.scss';
-@import './bar.scss';
+@import './bar/bar.scss';
 @import './todos.scss';
+@import './bar/change_todo_list_name.scss';
 @import './bar/folder.scss';
+@import './bar/todolists.scss';
+@import './header.scss';
+@import './todos/add_todo.scss';
+@import './todos/visibility_completed_todo.scss';
+@import './todo_full_info/comments.scss';
+@import './todo_full_info/full_text.scss';
+@import './todo_full_info/todo-manipulations.scss';
+@import './todo_full_info/todo_options.scss';
+@import './todo_full_info/todo_full_info.scss';
+@import './todo_full_info/subtasks.scss';
+@import './todo_full_info/note.scss';
+// @import '';
+// @import '';
+// @import '';
+
+
+

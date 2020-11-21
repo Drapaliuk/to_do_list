@@ -1,0 +1,14 @@
+.add-todo {
+    width: 100%;
+    height: 38px;
+    background-color: rgb(141, 134, 134);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.add-todo::placeholder {
+    color: #fff;
+}

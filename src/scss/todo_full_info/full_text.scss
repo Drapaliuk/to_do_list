@@ -1,0 +1,30 @@
+.full-text {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 1px 10px gray;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.full-text input {
+    margin-right: 10px;
+}
+
+.todo-text {
+    padding: 1px 10px;
+}
+
+.importantly-button-full-info {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    // position: absolute;
+    // right: 0;
+}
+
+.importantly-icon-full-info {
+    width: 18px;
+}
+

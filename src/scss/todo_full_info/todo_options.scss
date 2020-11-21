@@ -1,0 +1,52 @@
+.todo-options-wrapper {
+    margin: 0;
+    padding: 15px;
+    // background-color: #dcdee4;
+}
+
+.todo-options {
+    background-color: #fff;
+    padding: 7px;
+    margin: 0;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.make-to-date,
+.remind-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 4px 4px;
+
+    border-bottom: 1px solid #000;
+    position: relative;
+
+
+}
+
+.todo-options-icon {
+    margin-right: 10px;
+}
+
+.todo-options-input {
+    color: red;
+    border: none;
+    outline: none;
+}
+
+.todo-options-input::placeholder {
+    color: gray;
+}
+
+.clear-option-item {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+    color: gray;
+    position: absolute;
+    right: 0;
+}

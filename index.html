@@ -27,52 +27,65 @@
                         <span class="app-bookmark__amount">5</span>
                     </li>
                 </ul>
-                
-                <ul class="user-bookmarks">
+
+                <ul class="todo-lists">
                     <li class="folder">
-                        FOLDER
+                        <div class="folder-button">
+                            <img class="folder-icon" src="./src/img/folder.png" alt="folder icon">
+                            <span class="folder name">Some folder</span>
+
+                        </div>
                         <ul class="folder-inner-list">
                             <li class="todo-list">
-                                <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="user-bookmark__name">inner</span>
-                                <span class="user-bookmark__correct-block">
-                                    <span class="user-bookmark__amount">3</span>
-                                    <button class="user-bookmark__correct">&#x1f589;</button>
-                                    <button class="user-bookmark__delete">&#x232b;</button>
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">inner</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">2</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                    <button class="todo-list__delete">&#x232b;</button>
                                 </span>
                             </li>
                             <li class="todo-list">
-                                <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="user-bookmark__name">inner</span>
-                                <span class="user-bookmark__correct-block">
-                                    <span class="user-bookmark__amount">3</span>
-                                    <button class="user-bookmark__correct">&#x1f589;</button>
-                                    <button class="user-bookmark__delete">&#x232b;</button>
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">job</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">9</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                    <button class="todo-list__delete">&#x232b;</button>
+                                </span>
+                            </li>
+                            <li class="todo-list">
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">buisness</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">7</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                    <button class="todo-list__delete">&#x232b;</button>
                                 </span>
                             </li>
                         </ul>
                     </li>
                     <li class="todo-list">
-                        <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
-                        <span class="user-bookmark__name">User folder</span>
-                        <span class="user-bookmark__correct-block">
-                            <span class="user-bookmark__amount">3</span>
-                            <button class="user-bookmark__correct">&#x1f589;</button>
-                            <button class="user-bookmark__delete">&#x232b;</button>
+                        <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                        <span class="todo-list__name">User folder</span>
+                        <span class="todo-list__correct-block">
+                            <span class="todo-list__amount">3</span>
+                            <button class="todo-list__correct">&#x1f589;</button>
+                            <button class="todo-list__delete">&#x232b;</button>
                         </span>
                     </li>
                     <li class="todo-list">
-                        <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
-                        <span class="user-bookmark__name">Warnings </span>
-                        <span class="user-bookmark__correct-block">
-                            <span class="user-bookmark__amount">3</span>
-                            <button class="user-bookmark__correct">&#x1f589;</button>
-                            <button class="user-bookmark__delete">&#x232b;</button>
+                        <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                        <span class="todo-list__name">Warnings </span>
+                        <span class="todo-list__correct-block">
+                            <span class="todo-list__amount">3</span>
+                            <button class="todo-list__correct">&#x1f589;</button>
+                            <button class="todo-list__delete">&#x232b;</button>
                         </span>
                     </li>
                     <li class="change-list-name">
-                        <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
-                        <input class="new-name" type="text" placeholder="name">
+                        <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                        <input class="new-todo-list-name" type="text" placeholder="todo list name">
                         <span class="confirm-block">
                             <button class="confirm">&#10004;</button>
                             <button class="decline">&#10006;</button>
@@ -80,7 +93,7 @@
                     </li>
                 </ul>
                 <div class="add-folder-input-wrapper">
-                    <input class="add-folder-input" type="text" placeholder="name">
+                    <input class="add-folder-input" type="text" placeholder="folder name">
                 </div>
                 <button class="add-folder">+</button>
             </div>
@@ -88,7 +101,7 @@
 
             <div class="todos">
                 <div class="add-todo-wrapper">
-                    <input class="add-todo" type="text"  placeholder="Add todo">
+                    <input class="add-todo" type="text"  placeholder="+ Add todo">
                 </div>
                 <ul class="uncompleted-todo-list">
                     <li class="uncompleted-todo">
@@ -127,6 +140,75 @@
                         <div class="completed-todo__bokmarks">bookmarks</div>
                     </li>
                 </ul>
+            </div>
+            <div class="todo-full-info-wrapper">
+                <div class="full-text">
+                    <input type="checkbox">
+                    <p class="todo-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam minima fuga debitis, explicabo enim!
+                    </p>
+                    <button class="importantly-button-full-info">
+                        <img class="importantly-icon-full-info" src="./src/img/star-empty.png" alt="star">
+                    </button>
+                </div>
+
+                <div class="todo-options-wrapper">
+                    <ul class="todo-options">
+                        <li class="make-to-date">
+                            <img class="todo-options-icon" src="./src/img/calendar_bw.png" alt="calendar">
+                            <input class="todo-options-input" placeholder="Встановити термін">
+                            <button class="clear-option-item">&#10799;</button>
+                        </li>
+                        <li class="remind-me">
+                            <img class="todo-options-icon" src="./src/img/alarm-clock.png" alt="alarm clock">
+                            <input class="todo-options-input" placeholder="Нагадати">
+                            <button class="clear-option-item">&#10799;</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="subtask-wrapper">
+                        <form class="add-subtask-form">
+                            <button type="submit">+</button>
+                            <input class="add-subtask-input" type="text" placeholder="add subtask">
+                        </form>
+                        <ul class="subtasks">
+                            <li class="subtask">
+                                <input class="check-subtask" type="checkbox">
+                                <span class="subtask-text">Some text</span>
+                                <button class="delete-subtask">&#10799;</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="todo-note-wrapper">
+                        <textarea class="note" name="" id="" cols="30" rows="10" placeholder="Add note"></textarea>
+                    </div>
+
+                    <ul class="comments">
+                        <li class="comment">
+                            <span class="comment-text">Some text</span>
+                            <button class="delete-comment">&#10799;</button>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <div class="todo-manipulations-wrapper">
+                    <form class="add-comment-form">
+                        <input class="add-comment" type="text" placeholder="Add comment...">
+                        <button>Add</button>
+                    </form>
+                    <div class="todo-manipulations">
+                        <button class="close-todo-info">
+                            <img class="todo-manipulations-icons" src="./src/img/right-arrow.png" alt="close">
+                        </button>
+                        <p class="creted-by">created yesterday by me</p>
+                        <button class="delete-todo">
+                            <img class="todo-manipulations-icons" src="./src/img/trash.png" alt="delete">
+                        </button>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
     </div>
