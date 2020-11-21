@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/common/normalize.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="bar">
+                <header>
+                    <img class="logo" src="./src/img/logo.jpg" alt="">
+                    <img class="bell" src="./src/img/bell.png" alt="">
+                </header>
+                <ul class="app-bookmarks">
+                    <li class="app-bookmark">
+                        <img class="app-bookmark__icon" src="./src/img/calendar.png" alt="calendar icon">
+                        <span class="app-bookmark__name">Today </span>
+                        <span class="app-bookmark__amount">5</span>
+                    </li>
+                    <li class="app-bookmark">
+                        <img class="app-bookmark__icon" src="./src/img/week.png" alt="week icon">
+                        <span class="app-bookmark__name">Week </span>
+                        <span class="app-bookmark__amount">5</span>
+                    </li>
+                </ul>
+                
+                <ul class="user-bookmarks">
+                    <li class="folder">
+                        FOLDER
+                        <ul class="folder-inner-list">
+                            <li class="todo-list">
+                                <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="user-bookmark__name">inner</span>
+                                <span class="user-bookmark__correct-block">
+                                    <span class="user-bookmark__amount">3</span>
+                                    <button class="user-bookmark__correct">&#x1f589;</button>
+                                    <button class="user-bookmark__delete">&#x232b;</button>
+                                </span>
+                            </li>
+                            <li class="todo-list">
+                                <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="user-bookmark__name">inner</span>
+                                <span class="user-bookmark__correct-block">
+                                    <span class="user-bookmark__amount">3</span>
+                                    <button class="user-bookmark__correct">&#x1f589;</button>
+                                    <button class="user-bookmark__delete">&#x232b;</button>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="todo-list">
+                        <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
+                        <span class="user-bookmark__name">User folder</span>
+                        <span class="user-bookmark__correct-block">
+                            <span class="user-bookmark__amount">3</span>
+                            <button class="user-bookmark__correct">&#x1f589;</button>
+                            <button class="user-bookmark__delete">&#x232b;</button>
+                        </span>
+                    </li>
+                    <li class="todo-list">
+                        <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
+                        <span class="user-bookmark__name">Warnings </span>
+                        <span class="user-bookmark__correct-block">
+                            <span class="user-bookmark__amount">3</span>
+                            <button class="user-bookmark__correct">&#x1f589;</button>
+                            <button class="user-bookmark__delete">&#x232b;</button>
+                        </span>
+                    </li>
+                    <li class="change-list-name">
+                        <img class="user-bookmark__icon" src="./src/img/to-do-list.png" alt="">
+                        <input class="new-name" type="text" placeholder="name">
+                        <span class="confirm-block">
+                            <button class="confirm">&#10004;</button>
+                            <button class="decline">&#10006;</button>
+                        </span>
+                    </li>
+                </ul>
+                <div class="add-folder-input-wrapper">
+                    <input class="add-folder-input" type="text" placeholder="name">
+                </div>
+                <button class="add-folder">+</button>
+            </div>
+
+
+            <div class="todos">
+                <div class="add-todo-wrapper">
+                    <input class="add-todo" type="text"  placeholder="Add todo">
+                </div>
+                <ul class="uncompleted-todo-list">
+                    <li class="uncompleted-todo">
+                        <input class="uncompleted-todo__check"  type="checkbox">
+                        <div class="uncompleted-todo__text">Todo text</div>
+                        <button class="importantly-button">
+                            <img class="importantly-icon" src="./src/img/star-active.png" alt="star">
+                            <!-- <span class="a">&#9734;</span> -->
+                        </button>
+                    </li>
+                    <li class="uncompleted-todo">
+                        <input class="uncompleted-todo__check"  type="checkbox">
+                        <div class="uncompleted-todo__text">Todo text</div>
+                        <button class="importantly-button">
+                            <img class="importantly-icon" src="./src/img/star-empty.png" alt="star">
+                        </button>
+                        <div class="uncompleted-todo__bokmarks">
+                            
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="visible-completed-todos-wrapper">
+                    <button class="visible-completed-todos-button">completed item</button>
+                    <span class="eye-visible">&#128065;</span>
+                </div>
+                <ul class="completed-todo-list">
+                    <li class="completed-todo">
+                        <input class="completed-todo__check"  type="checkbox">
+                        <div class="completed-todo__text">Todo text</div>
+                        <div class="completed-todo__bokmarks">bookmarks</div>
+                    </li>
+                    <li class="completed-todo">
+                        <input class="completed-todo__check" type="checkbox">
+                        <div class="completed-todo__text">Todo text</div>
+                        <div class="completed-todo__bokmarks">bookmarks</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/src/js/main.js"></script>
+</html>
