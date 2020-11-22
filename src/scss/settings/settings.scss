@@ -1,0 +1,96 @@
+.settings {
+    background-color: hsla(180, 8%, 83%, 0.9);
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px 10px;
+    z-index: 99999999999;
+}
+
+.settings__header {
+    margin-top: 0;
+    text-align: center;
+}
+
+.settings__parts {
+    
+}
+
+.settings__open-part-btn {
+    width: 100%;
+    padding: 6px 25px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(194, 187, 187);
+    box-shadow: 0 0 10px rgb(201, 197, 197);
+    border-radius: 4px;
+}
+
+.settings__part-name {
+    letter-spacing: 1px;
+}
+
+.settings__part-open-icon {
+
+}
+
+.settings__list {
+    padding: 10px 0;
+}
+
+.settings__list-item {
+
+    // background-color: green;
+    margin-bottom: 5px;
+}
+
+.settings__value {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    position: relative;
+    
+
+}
+
+.settings__change-btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+
+}
+
+.settings__input {
+    box-shadow: 0 0 10px rgb(168, 164, 164);
+    outline: none;
+    padding: 4px 10px;
+    width: 80%;
+    border: none;
+    display: block;
+    border-radius: 3px;
+}
+
+.security-input {
+    margin-bottom: 5px;
+}
+
+.settings__subpart-name {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.settings__change-password-btn {
+    padding: 3px 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(182, 178, 178);
+    box-shadow: 0 0 10px gray;
+    cursor: pointer;
+    border-radius: 3px;
+}

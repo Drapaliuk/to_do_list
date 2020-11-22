@@ -5,6 +5,12 @@
     background-image: url('../img//background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    @media (max-width: 767px) {
+        display: none;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
 }
 
 .completed-todo,
@@ -13,11 +19,16 @@
     height: 36px;
     padding: 7px 15px;
     align-items: center;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     width: 100%;
     background-color: #fff;
     border-radius: 4px;
     position: relative;
+    cursor: pointer;
+    @media (max-width: 767px) {
+        height: 41px;
+    }
+
     
 }
 
@@ -37,16 +48,30 @@
 
 
 
-.importantly-button {
+.importantly-button,
+.pin-button {
     background-color: transparent;
     border: none;
     cursor: pointer;
     outline: none;
     position: absolute;
     right: 0;
+    @media (max-width: 767px) {
+        right: 3px;
+    }
+    
 }
 
-.importantly-icon {
-    width: 18px;
+.pin-button {
+    right: 33px;
 }
 
+.importantly-icon,
+.pin-icon {
+    width: 21px;
+}
+
+.completed-todo-list,
+.uncompleted-todo-list {
+    margin-bottom: 15px;
+}

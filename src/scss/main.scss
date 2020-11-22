@@ -1,7 +1,6 @@
 @import './common.scss';
 @import './bar/bar.scss';
 @import './todos.scss';
-@import './bar/change_todo_list_name.scss';
 @import './bar/folder.scss';
 @import './bar/todolists.scss';
 @import './header.scss';
@@ -14,6 +13,10 @@
 @import './todo_full_info/todo_full_info.scss';
 @import './todo_full_info/subtasks.scss';
 @import './todo_full_info/note.scss';
+@import './bar/edit_list.scss';
+@import './todos/todos_settings.scss';
+@import './settings/settings.scss';
+// @import '';
 // @import '';
 // @import '';
 // @import '';

@@ -2,6 +2,7 @@
     // height: 100px;
     background-color: #fff;
     position: absolute;
+
     width: 100%;
     bottom: 0;
     padding: 10px;
@@ -54,6 +55,7 @@
     border: 1px solid gray;
     padding: 6px 15px;
     border-radius: 3px;
+    outline: none;
 }
 
 .add-comment-form button {

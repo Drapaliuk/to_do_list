@@ -4,8 +4,7 @@
 }
 
 .app-bookmark,
-.todo-list,
-.change-list-name {
+.todo-list {
     padding: 6px 33px 6px 10px;
     cursor: pointer;
     transition: all .3s linear;
@@ -21,15 +20,9 @@
 
 .app-bookmark:hover,
 .todo-list:hover {
-    background-color: #2b96f1;
+    background-color:hsla(208, 88%, 56%, .65);
 
 }
-
-.app-bookmark__correct-block:hover,
-.todo-list__correct-block:hover {
-    transform: translateX(0);
-}
-
 
 .app-bookmark__name {
     outline: none;
@@ -43,6 +36,9 @@
 
 .todo-list__amount {
     margin-right: 4px;
+    @media (max-width: 767px) {
+        margin-right: 0;
+    }
 }
 
 .todo-list__icon,
@@ -59,15 +55,19 @@
     align-items: center;
     top: 0;
     right: 0;
-    transform: translateX(40%);
     display: flex;
     transition: all .3s linear;
 }
 
+.todo-list__correct-block {
+    @media (max-width: 767px) {
+        padding-right: 20px;
+    }
+}
 
 
-.todo-list__correct,
-.todo-list__delete {
+
+.todo-list__correct {
     display: inline-block;
     height: 100%;
     outline: none;
@@ -75,10 +75,13 @@
     background-color: transparent;
     cursor: pointer;
     transition: all .3s linear;
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .todo-list__correct {
-    border-left: 1px solid #fff;
+    // border-left: 1px solid #fff;
 }
 
 

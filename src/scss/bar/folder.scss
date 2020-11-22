@@ -10,16 +10,10 @@
     font-weight: 300;
     cursor: pointer;
     outline: none;
-}
-
-.add-folder-input-wrapper {
-    padding: 6px 10px;
-}
-
-.add-folder-input {
-    width: 100%;
-    padding: 3px 4px;
-
+    box-shadow: 0px 0px 10px gray;
+    @media (max-width: 767px) {
+        height: 10vh;
+    }
 }
 
 .folder {
@@ -28,15 +22,16 @@
 
 .folder-inner-list {
     padding-left: 15px;
+
 }
 
 .folder-icon {
     margin-right: 10px;
 }
 
-.folder-button {
+.folder-button,
+.new_folder {
     cursor: pointer;
-    // padding: 5px;
     padding: 6px 6px 6px 10px;
     transition: all .3s linear;
     display: flex;
@@ -46,4 +41,10 @@
 
 .folder-button:hover {
     background-color: #2b96f1;
+}
+
+.new-folder-name-input {
+    outline: none;
+    padding: 4px 3px 4px 10px;
+    border: none;
 }

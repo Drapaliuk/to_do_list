@@ -1,9 +1,14 @@
 .bar {
     background-color: #fff;
-    padding-top: 5px;
     font-family: sans-serif;
     position: relative;
     overflow: hidden;
+    color: rgb(94, 91, 91);
+    font-weight: 600;
+    @media (max-width: 767px) {
+        display: none;
+    }
+
 }
 
 

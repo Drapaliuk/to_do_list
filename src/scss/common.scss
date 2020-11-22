@@ -6,10 +6,12 @@ body *{
 body ul {
     padding-inline-start:0;
     list-style: none;
+    margin: 0;
 }
 
 body {
-    background-color: gray;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -27,6 +29,11 @@ body {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 3.5fr 1.5fr;
-    height: 100vh;
+    max-height: 100vh;
+
+    outline: 10px solid red;
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
     
 }

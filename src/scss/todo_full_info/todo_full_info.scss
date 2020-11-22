@@ -1,9 +1,13 @@
 .todo-full-info-wrapper {
     padding: 0;
-    // background-color: #fff;
     position: relative;
     background-color: #dcdee4;
-
+    padding-bottom: 90px;
+    height: 100%;
+    overflow: auto;
+    @media (max-width: 767px) {
+        // display: none;
+    }
 }
 
 
