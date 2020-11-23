@@ -1,8 +1,9 @@
 .todos-settings {
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+    transform: translateX(-45%);
     @media (max-width: 767px) {
         bottom: 3vh;
         position: fixed;

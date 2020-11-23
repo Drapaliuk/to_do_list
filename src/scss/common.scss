@@ -24,14 +24,14 @@ body {
 }
 
 .container {
-    max-width: 1900px;
+    // max-width: 1900px;
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 3.5fr 1.5fr;
-    max-height: 100vh;
+    height: 100vh;
+    background-color: red;
 
-    outline: 10px solid red;
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }

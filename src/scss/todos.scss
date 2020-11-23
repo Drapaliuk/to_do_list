@@ -6,8 +6,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    overflow: auto;
     @media (max-width: 767px) {
-        display: none;
+        // display: none;
         padding-top: 80px;
         padding-bottom: 80px;
     }
@@ -19,18 +20,30 @@
     height: 36px;
     padding: 7px 15px;
     align-items: center;
-    margin-bottom: 5px;
     width: 100%;
-    background-color: #fff;
     border-radius: 4px;
     position: relative;
     cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 5px;
+
+
     @media (max-width: 767px) {
         height: 41px;
     }
 
     
 }
+
+
+.uncompleted-todo-item {
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+
 
 .completed-todo {
     opacity: .5;
@@ -74,4 +87,12 @@
 .completed-todo-list,
 .uncompleted-todo-list {
     margin-bottom: 15px;
+}
+
+
+
+
+// EVENTS STYLES
+.uncompleted-todo__text.open-task {
+    color: hsla(0, 0%, 0%, .5)
 }

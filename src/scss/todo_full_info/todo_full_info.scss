@@ -3,12 +3,28 @@
     position: relative;
     background-color: #dcdee4;
     padding-bottom: 90px;
-    height: 100%;
     overflow: auto;
     @media (max-width: 767px) {
         // display: none;
+        padding-bottom: 0;
+        position: static;
     }
 }
 
+.todo-full-info-wrapper.desktop {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+
+// EVENT-CLASSES
+// .todo-full-info-wrapper
+.todo-full-info-mobile {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
 
 
