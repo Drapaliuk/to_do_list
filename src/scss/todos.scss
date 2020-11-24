@@ -8,9 +8,9 @@
     position: relative;
     overflow: auto;
     @media (max-width: 767px) {
-        // display: none;
+        display: none;
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 130px;
     }
 }
 
@@ -48,6 +48,10 @@
 .completed-todo {
     opacity: .5;
     text-decoration: line-through;
+    @media (max-width: 767px) {
+        opacity: .65;
+
+    }
 }
 
 

@@ -16,6 +16,11 @@
     font-weight: 300;
     font-size: 13px;
     cursor: pointer;
+    @media (max-width: 767px) {
+        opacity: .75;
+        width: 80%;
+        padding: 10px 4px;
+    }
 }
 
 .eye-visible {

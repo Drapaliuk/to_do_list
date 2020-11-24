@@ -1,5 +1,8 @@
 .add-todo-wrapper {
     margin-bottom: 20px;
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 .add-todo {
     width: 100%;

@@ -12,14 +12,15 @@
 <body>
     <div id="root">
         <div class="container">
+         <!-- !BAR  -->
             <div class="bar">
                 <header>
                     <button class="user-photo">
                         <img src="./src/img/logo.jpg" alt="user photo">
                     </button>
-                    <button>
+                    <!-- <button>
                         <img src="./src/img/left-arrow.png" alt="">
-                    </button>
+                    </button> -->
                     <div>
                         <button class="settings-btn">
                             <img src="./src/img/settings.png" alt="settings-icon">
@@ -70,6 +71,47 @@
                                 <span class="todo-list__name">inner</span>
                                 <span class="todo-list__correct-block">
                                     <span class="todo-list__amount">2</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                </span>
+                            </li>
+                            <li class="todo-list">
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">job</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">9</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                </span>
+                            </li>
+                            <li class="todo-list">
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">job</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">9</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                </span>
+                            </li>
+                            <li class="todo-list">
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">job</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">9</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                </span>
+                            </li>
+                            <li class="todo-list">
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">job</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">9</span>
+                                    <button class="todo-list__correct">&#x1f589;</button>
+                                </span>
+                            </li>
+
+                            <li class="todo-list">
+                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                <span class="todo-list__name">job</span>
+                                <span class="todo-list__correct-block">
+                                    <span class="todo-list__amount">9</span>
                                     <button class="todo-list__correct">&#x1f589;</button>
                                 </span>
                             </li>
@@ -146,35 +188,45 @@
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Name: <span></span>
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="name">
                                 </li>
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Surename <span></span>:
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="surename">
                                 </li>
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Birthday <span></span>:
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="birthdata">
                                 </li>
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Country: <span></span>
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="country">
                                 </li>
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         City:<span></span>
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="city">
                                 </li>
@@ -196,7 +248,9 @@
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Phone number: <span>+380689308684</span>
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input security-input" type="text" placeholder="old phone">
                                     <input class="settings__input security-input" type="text" placeholder="new phone">
@@ -204,7 +258,9 @@
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Email: <span>vitaliidrapaliuk@gmail.com</span>
-                                        <button class="settings__change-btn">&#x1f589;</button>
+                                        <button class="settings__change-btn">
+                                            <img src='./src/img/pen.png' alt='correct'>
+                                        </button>
                                     </div>
                                     <input class="settings__input security-input" type="text" placeholder="old email">
                                     <input class="settings__input security-input" type="text" placeholder="new email">
@@ -237,12 +293,11 @@
                 </div> -->
                 <!-- EDIT LIST -->
 
-                <ul class="uncompleted-todo-list">
 
-
-
-
-                    <li class="uncompleted-todo">
+<!-- TODOS! -->
+    <!-- TODOS UNCOMPLETED! -->
+                <!-- <ul class="uncompleted-todo-list">
+                    <li class="uncompleted-todo-item">
                         <div class="uncompleted-todo">
                             <input class="uncompleted-todo__check" type="checkbox">
                             <div class="uncompleted-todo__text">Todo text</div>
@@ -256,12 +311,8 @@
                         <div class="todo-full-info-mobile">
                             <div class="todo-full-info-wrapper">
                                 <div class="full-text">
-                                    <input type="checkbox">
-                                    <p class="todo-text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam minima fuga
-                                        debitis,
-                                        explicabo enim!
-                                    </p>
+                                    <input type="checkbox" class="full-info-check-todo">
+                                    <textarea class="todo-change-text" name="" placeholder="fulltext"></textarea>
                                     <button class="importantly-button-full-info">
                                         <img class="importantly-icon-full-info" src="./src/img/star-empty.png" alt="star">
                                     </button>
@@ -272,13 +323,17 @@
                                         <li class="make-to-date">
                                             <img class="todo-options-icon" src="./src/img/calendar_bw.png" alt="calendar">
                                             <input class="todo-options-input" placeholder="Встановити термін">
-                                            <button class="clear-option-item">&#10799;</button>
+                                            <button class="clear-option-item">
+                                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                            </button>
                                         </li>
                                         <li class="remind-me">
                                             <img class="todo-options-icon" src="./src/img/alarm-clock.png"
                                                 alt="alarm clock">
                                             <input class="todo-options-input" placeholder="Нагадати">
-                                            <button class="clear-option-item">&#10799;</button>
+                                            <button class="clear-option-item">
+                                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                            </button>
                                         </li>
                                     </ul>
     
@@ -291,12 +346,16 @@
                                             <li class="subtask">
                                                 <input class="check-subtask" type="checkbox">
                                                 <span class="subtask-text">Some text</span>
-                                                <button class="delete-subtask">&#10799;</button>
+                                                <button class="delete-subtask">
+                                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                </button>
                                             </li>
                                             <li class="subtask">
                                                 <input class="check-subtask" type="checkbox">
                                                 <span class="subtask-text">Some text</span>
-                                                <button class="delete-subtask">&#10799;</button>
+                                                <button class="delete-subtask">
+                                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                </button>
                                             </li>
                                         </ul>
                                     </div>
@@ -308,7 +367,9 @@
                                     <ul class="comments">
                                         <li class="comment">
                                             <span class="comment-text">Some text</span>
-                                            <button class="delete-comment">&#10799;</button>
+                                            <button class="delete-comment">
+                                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                            </button>
                                         </li>
                                     </ul>
                                 </div>
@@ -333,66 +394,24 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </li>
-                    <li class="uncompleted-todo">
-                        <input class="uncompleted-todo__check" type="checkbox">
-                        <div class="uncompleted-todo__text">Todo text</div>
-                        <button class="pin-button">
-                            <img class="pin-icon" src="./src/img/unpin.png" alt="star">
-                        </button>
-
-                        <button class="importantly-button">
-                            <img class="importantly-icon" src="./src/img/star-empty.png" alt="star">
-                        </button>
+                    <li class="uncompleted-todo-item">
+                        <div class="uncompleted-todo">
+                            <input class="uncompleted-todo__check" type="checkbox">
+                            <div class="uncompleted-todo__text">Todo text</div>
+                            <button class="pin-button">
+                                <img class="pin-icon" src="./src/img/unpin.png" alt="star">
+                            </button>
+    
+                            <button class="importantly-button">
+                                <img class="importantly-icon" src="./src/img/star-empty.png" alt="star">
+                            </button>
+                        </div>
                     </li>
-                    <li class="uncompleted-todo">
-                        <input class="uncompleted-todo__check" type="checkbox">
-                        <div class="uncompleted-todo__text">Todo text</div>
-                        <button class="pin-button">
-                            <img class="pin-icon" src="./src/img/unpin.png" alt="star">
-                        </button>
-
-                        <button class="importantly-button">
-                            <img class="importantly-icon" src="./src/img/star-empty.png" alt="star">
-                        </button>
-                    </li>
-                    <li class="uncompleted-todo">
-                        <input class="uncompleted-todo__check" type="checkbox">
-                        <div class="uncompleted-todo__text">Todo text</div>
-                        <button class="pin-button">
-                            <img class="pin-icon" src="./src/img/unpin.png" alt="star">
-                        </button>
-
-                        <button class="importantly-button">
-                            <img class="importantly-icon" src="./src/img/star-empty.png" alt="star">
-                        </button>
-
-
-
-
-                        <!-- <div class="full-info-mobile"> -->
-
-                        <!-- </div> -->
-                    </li>
-                </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="visible-completed-todos-wrapper">
+                </ul> -->
+    <!-- TODOS UNCOMPLETED! -->
+    <!-- TODOS COMPLETED! -->
+                <!-- <div class="visible-completed-todos-wrapper">
                     <button class="visible-completed-todos-button">completed item</button>
                     <span class="eye-visible">&#128065;</span>
                 </div>
@@ -405,7 +424,14 @@
                         <input class="completed-todo__check" type="checkbox">
                         <div class="completed-todo__text">Todo text</div>
                     </li>
-                </ul>
+                </ul> -->
+    <!-- TODOS COMPLETED! -->
+
+<!-- TODOS! -->
+
+
+
+<!-- TODOS SETTINGS -->
                 <div class="todos-settings">
                     <ul class="options-list-popup">
 
@@ -459,25 +485,13 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
+<!-- TODOS SETTINGS -->
 
             <div class="todo-full-info-wrapper desktop">
                 <div class="full-text">
-                    <input type="checkbox">
-                    <!-- <p class="todo-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aperiam minima fuga debitis,
-                        explicabo enim!
-                    </p> -->
-                    <textarea class="todo-change-text" name="">
-                        placa
-                    </textarea>
-
+                    <input type="checkbox" class="full-info-check-todo">
+                  
+                    <textarea class="todo-change-text" name="" placeholder="fulltext"></textarea>
                     <button class="importantly-button-full-info">
                         <img class="importantly-icon-full-info" src="./src/img/star-empty.png" alt="star">
                     </button>
@@ -488,12 +502,16 @@
                         <li class="make-to-date">
                             <img class="todo-options-icon" src="./src/img/calendar_bw.png" alt="calendar">
                             <input class="todo-options-input" placeholder="Встановити термін">
-                            <button class="clear-option-item">&#10799;</button>
+                            <button class="clear-option-item">
+                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                            </button>
                         </li>
                         <li class="remind-me">
                             <img class="todo-options-icon" src="./src/img/alarm-clock.png" alt="alarm clock">
                             <input class="todo-options-input" placeholder="Нагадати">
-                            <button class="clear-option-item">&#10799;</button>
+                            <button class="clear-option-item">
+                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                            </button>
                         </li>
                     </ul>
 
@@ -506,12 +524,16 @@
                             <li class="subtask">
                                 <input class="check-subtask" type="checkbox">
                                 <span class="subtask-text">Some text</span>
-                                <button class="delete-subtask">&#10799;</button>
+                                <button class="delete-subtask">
+                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                </button>
                             </li>
                             <li class="subtask">
                                 <input class="check-subtask" type="checkbox">
                                 <span class="subtask-text">Some text</span>
-                                <button class="delete-subtask">&#10799;</button>
+                                <button class="delete-subtask">
+                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -522,7 +544,9 @@
                     <ul class="comments">
                         <li class="comment">
                             <span class="comment-text">Some text</span>
-                            <button class="delete-comment">&#10799;</button>
+                            <button class="delete-comment">
+                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                            </button>
                         </li>
                     </ul>
                 </div>
