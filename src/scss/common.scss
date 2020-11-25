@@ -15,6 +15,14 @@ body {
 }
 
 
+body img {
+    display: block;
+}
+
+.inactive {
+    filter: blur(1.1px);
+}
+
 
 .slick-list {
     overflow: hidden;
@@ -30,10 +38,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 3.5fr 1.5fr;
     height: 100vh;
-    background-color: red;
 
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
-    
 }
+
+

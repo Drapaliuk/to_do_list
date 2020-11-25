@@ -12,15 +12,16 @@
 <body>
     <div id="root">
         <div class="container">
-         <!-- !BAR  -->
-            <div class="bar">
+            <!-- !BAR  -->
+            <div class="bar dark">
+
+                
+
+
                 <header>
                     <button class="user-photo">
                         <img src="./src/img/logo.jpg" alt="user photo">
                     </button>
-                    <!-- <button>
-                        <img src="./src/img/left-arrow.png" alt="">
-                    </button> -->
                     <div>
                         <button class="settings-btn">
                             <img src="./src/img/settings.png" alt="settings-icon">
@@ -29,36 +30,63 @@
                             <img src="./src/img/bell.png" alt="notification">
                         </button>
                     </div>
+                    
+                    
                 </header>
+                <ul class="notification">
+                    <li class="notification__item">
+                        <button class="notification__btn">
+                            some event
+                        </button>
+                    </li>
+                    <li class="notification__item">
+                        <button class="notification__btn">
+                           some todo
+                        </button>
+
+                        <button class="notification__delete">
+                            <img src="./src/img/close-icon.png" alt="">
+                        </button>
+                    </li>
+                    <li class="notification__item">
+                        <button class="notification__btn">
+                            some event
+                        </button>
+                    </li>
+                    <li class="notification__item">
+                        <button class="notification__btn">
+                            some event
+                        </button>
+                    </li>
+                </ul>
 
                 <ul class="app-bookmarks">
                     <li class="app-bookmark">
                         <img class="app-bookmark__icon" src="./src/img/calendar.png" alt="calendar icon">
                         <span class="app-bookmark__name">Today </span>
-                        <span class="app-bookmark__amount">7</span>
+                        <span class="app-bookmark__amount-todo">2</span>
                     </li>
                     <li class="app-bookmark">
                         <img class="app-bookmark__icon" src="./src/img/week.png" alt="week icon">
                         <span class="app-bookmark__name">Week </span>
-                        <span class="app-bookmark__amount">29</span>
+                        <span class="app-bookmark__amount-todo">2</span>
+
                     </li>
                     <li class="app-bookmark">
                         <img class="app-bookmark__icon" src="./src/img/star-active.png" alt="week icon">
                         <span class="app-bookmark__name">Important </span>
-                        <span class="app-bookmark__amount">14</span>
+                        <span class="app-bookmark__amount-todo">2</span>
                     </li>
 
                 </ul>
+                
+                
 
                 <ul class="todo-lists">
-
                     <li class="new_folder">
                         <img class="folder-icon" src="./src/img/folder.png" alt="folder">
                         <input class="new-folder-name-input" type="text" placeholder="folder name">
                     </li>
-
-
-
                     <li class="folder">
                         <div class="folder-button">
                             <img class="folder-icon" src="./src/img/folder.png" alt="folder icon">
@@ -66,93 +94,107 @@
 
                         </div>
                         <ul class="folder-inner-list">
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">inner</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">2</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
+                            <li class="todo-list inactive">
+                                <div class="todo-list__inner-wrapper">
+                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <span class="todo-list__name">inner</span>
+                                    <span class="todo-list__correct-block">
+                                        <span class="todo-list__amount">2</span>
+                                        <button class="todo-list__correct">
+                                            <img src="./src/img/pen.png" alt="correct">
+                                        </button>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">job</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">9</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
+                            <li class="todo-list inactive">
+                                <div class="todo-list__inner-wrapper">
+                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <span class="todo-list__name">inner</span>
+                                    <span class="todo-list__correct-block">
+                                        <span class="todo-list__amount">2</span>
+                                        <button class="todo-list__correct">
+                                            <img src="./src/img/pen.png" alt="correct">
+                                        </button>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">job</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">9</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
+                            <li class="todo-list inactive">
+                                <div class="todo-list__inner-wrapper">
+                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <span class="todo-list__name">job</span>
+                                    <span class="todo-list__correct-block">
+                                        <span class="todo-list__amount">9</span>
+                                        <button class="todo-list__correct">
+                                            <img src="./src/img/pen.png" alt="correct">
+                                        </button>
+                                    </span>
+                                </div>
                             </li>
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">job</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">9</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
-                            </li>
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">job</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">9</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
-                            </li>
-
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">job</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">9</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
-                            </li>
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">job</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">9</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
-                            </li>
-                            <li class="todo-list">
-                                <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                                <span class="todo-list__name">buisness</span>
-                                <span class="todo-list__correct-block">
-                                    <span class="todo-list__amount">7</span>
-                                    <button class="todo-list__correct">&#x1f589;</button>
-                                </span>
+                            <li class="todo-list inactive">
+                                <div class="todo-list__inner-wrapper">
+                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <span class="todo-list__name">job</span>
+                                    <span class="todo-list__correct-block">
+                                        <span class="todo-list__amount">9</span>
+                                        <button class="todo-list__correct">
+                                            <img src="./src/img/pen.png" alt="correct">
+                                        </button>
+                                    </span>
+                                </div>
                             </li>
                         </ul>
                     </li>
-                    <li class="todo-list">
-                        <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                        <span class="todo-list__name">User folder</span>
-                        <span class="todo-list__correct-block">
-                            <span class="todo-list__amount">3</span>
-                            <button class="todo-list__correct">&#x1f589;</button>
-                        </span>
+                    <li class="todo-list todolist__edit-mobile-active">
+                        <div class="todo-list__inner-wrapper">
+                            <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                            <span class="todo-list__name">Warnings </span>
+                            <span class="todo-list__correct-block">
+                                <span class="todo-list__amount">3</span>
+                                <button class="todo-list__correct">
+                                    <img src="./src/img/pen.png" alt="correct">
+                                </button>
+                            </span>
+                        </div>
+                        <ul class="todolist__edit-mobile">
+                            <li class="todolist__edit-mobile-item">
+                                <button class="todolist__edit-mobile-btn">
+                                    <img class="todolist__edit-mobile-icon" src="./src/img/mute.png" alt="">
+                                    <span class="todolist__edit-mobile-text">Don`t disturbe
+                                        <span class="todolist__edit-mobile-disturb-status">Off</span></span>
+                                </button>
+                            </li>
+                            <li class="todolist__edit-mobile-item">
+                                <button class="todolist__edit-mobile-btn">
+                                    <img class="todolist__edit-mobile-icon" src="./src/img/pen.png" alt="">
+                                    <span class="todolist__edit-mobile-text">Rename</span>
+                                </button>
+                            </li>
+                            <li class="todolist__edit-mobile-item">
+                                <button class="todolist__edit-mobile-btn">
+                                    <img class="todolist__edit-mobile-icon" src="./src/img/trash.png" alt="">
+                                    <span class="todolist__edit-mobile-text">Delete</span>
+                                </button>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="todo-list">
-                        <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
-                        <span class="todo-list__name">Warnings </span>
-                        <span class="todo-list__correct-block">
-                            <span class="todo-list__amount">3</span>
-                            <button class="todo-list__correct">&#x1f589;</button>
-                        </span>
+                    <li class="todo-list inactive">
+                        <div class="todo-list__inner-wrapper">
+                            <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                            <span class="todo-list__name">User folder</span>
+                            <span class="todo-list__correct-block">
+                                <span class="todo-list__amount">3</span>
+                                <button class="todo-list__correct">
+                                    <img src="./src/img/pen.png" alt="correct">
+                                </button>
+                            </span>
+                        </div>
+                        
                     </li>
                 </ul>
                 <button class="add-folder">+</button>
             </div>
 
+<!-- !BAR -->
 
             <div class="todos">
                 <header>
@@ -294,8 +336,8 @@
                 <!-- EDIT LIST -->
 
 
-<!-- TODOS! -->
-    <!-- TODOS UNCOMPLETED! -->
+                <!-- TODOS! -->
+                <!-- TODOS UNCOMPLETED! -->
                 <!-- <ul class="uncompleted-todo-list">
                     <li class="uncompleted-todo-item">
                         <div class="uncompleted-todo">
@@ -409,8 +451,8 @@
                         </div>
                     </li>
                 </ul> -->
-    <!-- TODOS UNCOMPLETED! -->
-    <!-- TODOS COMPLETED! -->
+                <!-- TODOS UNCOMPLETED! -->
+                <!-- TODOS COMPLETED! -->
                 <!-- <div class="visible-completed-todos-wrapper">
                     <button class="visible-completed-todos-button">completed item</button>
                     <span class="eye-visible">&#128065;</span>
@@ -425,16 +467,15 @@
                         <div class="completed-todo__text">Todo text</div>
                     </li>
                 </ul> -->
-    <!-- TODOS COMPLETED! -->
+                <!-- TODOS COMPLETED! -->
 
-<!-- TODOS! -->
+                <!-- TODOS! -->
 
 
 
-<!-- TODOS SETTINGS -->
+                <!-- TODOS SETTINGS -->
                 <div class="todos-settings">
                     <ul class="options-list-popup">
-
                         <li class="todos-option">
                             <button class="todos-option-btn">
                                 <img class="todos-option-icon" src="./src/img/mute.png" alt="">
@@ -485,12 +526,12 @@
                     </div>
                 </div>
             </div>
-<!-- TODOS SETTINGS -->
+            <!-- TODOS SETTINGS -->
 
             <div class="todo-full-info-wrapper desktop">
                 <div class="full-text">
                     <input type="checkbox" class="full-info-check-todo">
-                  
+
                     <textarea class="todo-change-text" name="" placeholder="fulltext"></textarea>
                     <button class="importantly-button-full-info">
                         <img class="importantly-icon-full-info" src="./src/img/star-empty.png" alt="star">

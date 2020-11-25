@@ -5,14 +5,23 @@
     color: rgb(94, 91, 91);
     font-weight: 600;
     overflow: auto;
-    // height: 100%;
+    position: relative;
     @media (max-width: 767px) {
         // display: none;
         padding-top: 80px;
         padding-bottom: 120px;
     }
-
 }
+
+// .bar.dark {
+//     background-color: #000;
+//     color: #fff;
+// }
+
+// .bar.dark * {
+//     background-color: #000;
+//     color: #fff;
+// }
 
 
 

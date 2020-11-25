@@ -1,0 +1,1 @@
+.notification{width:97%;margin:auto;padding:10px 4px;border:1px solid gray;position:absolute;top:60px;left:50%;transform:translateX(-50%);background-color:#fff;z-index:9999;border-radius:5px}.notification__item{margin-bottom:5px}.notification__btn{cursor:pointer;background-color:#eee6e6;display:block;width:100%;margin:auto;height:30px;border:1px solid #dfd6d6}
