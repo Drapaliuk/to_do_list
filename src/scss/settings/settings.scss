@@ -27,7 +27,7 @@
 
 .settings__open-part-btn {
     width: 100%;
-    padding: 6px 25px;
+    padding: 6px 15px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -73,7 +73,19 @@
 
 }
 
-.settings__input {
+.selected-language {
+    margin-bottom: 10px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.selected-language svg {
+    margin-left: 10px;
+}
+
+.settings__input,
+.language-btn {
     box-shadow: 0 0 10px rgb(168, 164, 164);
     outline: none;
     padding: 4px 10px;
@@ -82,6 +94,20 @@
     display: block;
     border-radius: 3px;
 }
+
+.language-btn {
+    background-color: #fff;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.language-btn svg {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 .security-input {
     margin-bottom: 5px;
@@ -99,4 +125,13 @@
     box-shadow: 0 0 10px gray;
     cursor: pointer;
     border-radius: 3px;
+}
+
+.settings__part-name-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.settings__part-name-wrapper .icon {
+    margin-right: 10px;
 }

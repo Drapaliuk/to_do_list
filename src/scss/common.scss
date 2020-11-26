@@ -3,6 +3,11 @@ body *{
     font-family: sans-serif;
 }
 
+// body.dark * {
+//     background-color: #121212;
+//     color: rgb(209, 195, 195);
+// }
+
 body ul {
     padding-inline-start:0;
     list-style: none;
@@ -38,6 +43,7 @@ body img {
     display: grid;
     grid-template-columns: 1fr 3.5fr 1.5fr;
     height: 100vh;
+    display: none;
 
     @media (max-width: 767px) {
         grid-template-columns: 1fr;

@@ -1,0 +1,34 @@
+.introduction {
+    height: 300px;
+}
+
+.introduction h1 {
+    margin-bottom: 80px;
+    font-size: 3rem;
+}
+
+.introduction__login-btn,
+.introduction__signin-btn,
+.introduction__guest-btn {
+    padding: 20px 60px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+.introduction__login-btn:hover,
+.introduction__signin-btn:hover,
+.introduction__guest-btn:hover {
+    background-color: #0077c8;
+}
+
+.introduction__signin-btn {
+
+}
+
+.introduction__guest-btn {
+
+}

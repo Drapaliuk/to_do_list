@@ -2,7 +2,8 @@
     width: 97%;
     margin: auto;
     padding: 10px 4px;
-    border: 1px solid gray;
+    border: 1px solid rgb(204, 202, 202);
+
     position: absolute;
     top: 60px;
     left: 50%;
@@ -15,14 +16,31 @@
 
 .notification__item {
     margin-bottom: 5px;
+    display: flex;
+}
+
+.notification__delete {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s linear;
+}
+
+.notification__delete:hover {
+    background-color: rgb(206, 197, 197);
+}
+
+.notification__delete img {
+    width: 10px;
+    height: 10px;
 }
 
 .notification__btn {
     cursor: pointer;
-    background-color: rgb(238, 230, 230);
     display: block;
     width: 100%;
     margin: auto;
     height: 30px;
-    border: 1px solid rgb(223, 214, 214);
+    border: none;
+    outline: none;
 }

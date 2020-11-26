@@ -9,71 +9,133 @@
     <title>Document</title>
 </head>
 
-<body>
+
+
+
+<body class="dark">
     <div id="root">
-        <div class="container">
+        <div class="authorization">
+                <!-- <div class="introduction">
+                    <h1>Welcome to Wunderlist!</h1>
+                    <button class="introduction__login-btn">
+                        login
+                    </button>
+                    <button class="introduction__signin-btn">
+                        sign in
+                    </button>
+                    <button class="introduction__guest-btn">
+                        guest
+                    </button>
+                </div> -->
+                
+                <div class="registration">
+                    <div class="registration__icon-background">
+                        <svg class="icon__registration">
+                            <use href="./src/img/sprite.svg#icon-user-empty-fill"></use>
+                        </svg>
+                    </div>
+                    <h2 class="registration__header">Registration</h2>
+                    <form class="registration__form">
+                        <div class="registration__input-wrapper">
+                            <label for="registration-login">
+                                <svg class="icon">
+                                    <use href="./src/img/sprite.svg#icon-user"></use>
+                                </svg>
+                            </label>
+                            <input class="registration__login" id='registration-login' type="text" placeholder="login">
+                            <div class="registration__valid-message registration__valid-message--login">messagasdasdasdasdasdase</div>
+                        </div>
+                        <div class="registration__input-wrapper">
+                            <label for="registration-password">
+                                <svg class="icon">
+                                    <use href="./src/img/sprite.svg#icon-lock"></use>
+                                </svg>
+                            </label>
+                            <input class="registration__passsword" id='registration-password' type="password" placeholder="password">
+                            <div class="registration__valid-message registration__valid-message--password">
+                                <div class="triangle-up"></div>
+                                message
+                            </div>
+                        
+                        </div>
+                        <div class="registration__btn-wrapper">
+                        <button class="registration__btn-done">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+ <!--
+                <div class="login">
+                    <form action="">
+                        <input type="text" placeholder="text">
+                        <input type="password" placeholder="password">
+                        <button>Login</button>
+                    </form>
+                    <div>
+                        <button>Restore pasword</button>
+                        <button>registration</button>
+                    </div>
+                </div> -->
+            </d>
+         <div class="container">
+
             <!-- !BAR  -->
             <div class="bar dark">
-
-                
-
-
                 <header>
                     <button class="user-photo">
                         <img src="./src/img/logo.jpg" alt="user photo">
                     </button>
                     <div>
                         <button class="settings-btn">
-                            <img src="./src/img/settings.png" alt="settings-icon">
+                            <svg class="icon icon-settings">
+                                <use href="./src/img/sprite.svg#icon-settings"></use>
+                            </svg>
                         </button>
                         <button class="bell">
-                            <img src="./src/img/bell.png" alt="notification">
+                            <svg class="icon icon--notification">
+                                <use href="./src/img/sprite.svg#icon-notification"></use>
+                            </svg>
                         </button>
                     </div>
                     
                     
                 </header>
-                <ul class="notification">
+          <!-- !NOTIFICATION       -->
+                <!-- <ul class="notification">
                     <li class="notification__item">
                         <button class="notification__btn">
                             some event
                         </button>
-                    </li>
-                    <li class="notification__item">
-                        <button class="notification__btn">
-                           some todo
-                        </button>
-
-                        <button class="notification__delete">
+                         <button class="notification__delete">
                             <img src="./src/img/close-icon.png" alt="">
                         </button>
                     </li>
-                    <li class="notification__item">
-                        <button class="notification__btn">
-                            some event
-                        </button>
-                    </li>
-                    <li class="notification__item">
-                        <button class="notification__btn">
-                            some event
-                        </button>
-                    </li>
-                </ul>
+                </ul> -->
+          <!-- !NOTIFICATION       -->
+
 
                 <ul class="app-bookmarks">
                     <li class="app-bookmark">
-                        <img class="app-bookmark__icon" src="./src/img/calendar.png" alt="calendar icon">
+                        <svg class="icon icon--bar">
+                            <use href="./src/img/sprite.svg#icon-calendar_color"></use>
+                        </svg>
                         <span class="app-bookmark__name">Today </span>
                         <span class="app-bookmark__amount-todo">2</span>
                     </li>
                     <li class="app-bookmark">
-                        <img class="app-bookmark__icon" src="./src/img/week.png" alt="week icon">
+
+                        <svg class="icon icon--bar">
+                            <use href="./src/img/sprite.svg#icon-week"></use>
+                        </svg>
+
                         <span class="app-bookmark__name">Week </span>
                         <span class="app-bookmark__amount-todo">2</span>
 
                     </li>
                     <li class="app-bookmark">
-                        <img class="app-bookmark__icon" src="./src/img/star-active.png" alt="week icon">
+                        <svg class="icon icon__star--active icon--bar">
+                            <use href="./src/img/sprite.svg#icon-star"></use>
+                        </svg>
+
                         <span class="app-bookmark__name">Important </span>
                         <span class="app-bookmark__amount-todo">2</span>
                     </li>
@@ -84,60 +146,91 @@
 
                 <ul class="todo-lists">
                     <li class="new_folder">
-                        <img class="folder-icon" src="./src/img/folder.png" alt="folder">
+                        <div>
+                            <svg class="icon icon--bar">
+                                <use href="./src/img/sprite.svg#icon-folder"></use>
+                            </svg>
+                        </div>
+                        
+
+                        <!-- <img class="folder-icon" src="./src/img/folder.png" alt="folder"> -->
                         <input class="new-folder-name-input" type="text" placeholder="folder name">
                     </li>
                     <li class="folder">
                         <div class="folder-button">
-                            <img class="folder-icon" src="./src/img/folder.png" alt="folder icon">
+                            <svg class="icon icon--bar">
+                                <use href="./src/img/sprite.svg#icon-folder"></use>
+                            </svg>
+                            <!-- <img class="folder-icon" src="./src/img/folder.png" alt="folder icon"> -->
                             <span class="folder name">Some folder</span>
 
                         </div>
                         <ul class="folder-inner-list">
                             <li class="todo-list inactive">
                                 <div class="todo-list__inner-wrapper">
-                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <svg class="icon icon--bar">
+                                        <use href="./src/img/sprite.svg#icon-clipboard"></use>
+                                    </svg>
+
+                                    <!-- <img class="todo-list__icon" src="./src/img/to-do-list.png" alt=""> -->
                                     <span class="todo-list__name">inner</span>
                                     <span class="todo-list__correct-block">
                                         <span class="todo-list__amount">2</span>
                                         <button class="todo-list__correct">
-                                            <img src="./src/img/pen.png" alt="correct">
+                                            <svg class="icon icon-icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </span>
                                 </div>
                             </li>
                             <li class="todo-list inactive">
                                 <div class="todo-list__inner-wrapper">
-                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <svg class="icon icon--bar">
+                                        <use href="./src/img/sprite.svg#icon-clipboard"></use>
+                                    </svg>
+                                    <!-- <img class="todo-list__icon" src="./src/img/to-do-list.png" alt=""> -->
                                     <span class="todo-list__name">inner</span>
                                     <span class="todo-list__correct-block">
                                         <span class="todo-list__amount">2</span>
                                         <button class="todo-list__correct">
-                                            <img src="./src/img/pen.png" alt="correct">
+                                            <svg class="icon icon-icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </span>
                                 </div>
                             </li>
                             <li class="todo-list inactive">
                                 <div class="todo-list__inner-wrapper">
-                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <svg class="icon icon--bar">
+                                        <use href="./src/img/sprite.svg#icon-clipboard"></use>
+                                    </svg>
+                                    <!-- <img class="todo-list__icon" src="./src/img/to-do-list.png" alt=""> -->
                                     <span class="todo-list__name">job</span>
                                     <span class="todo-list__correct-block">
                                         <span class="todo-list__amount">9</span>
                                         <button class="todo-list__correct">
-                                            <img src="./src/img/pen.png" alt="correct">
+                                            <svg class="icon icon-icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </span>
                                 </div>
                             </li>
                             <li class="todo-list inactive">
                                 <div class="todo-list__inner-wrapper">
-                                    <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                                    <svg class="icon icon--bar">
+                                        <use href="./src/img/sprite.svg#icon-clipboard"></use>
+                                    </svg>
+                                    <!-- <img class="todo-list__icon" src="./src/img/to-do-list.png" alt=""> -->
                                     <span class="todo-list__name">job</span>
                                     <span class="todo-list__correct-block">
                                         <span class="todo-list__amount">9</span>
                                         <button class="todo-list__correct">
-                                            <img src="./src/img/pen.png" alt="correct">
+                                            <svg class="icon icon-icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </span>
                                 </div>
@@ -146,32 +239,50 @@
                     </li>
                     <li class="todo-list todolist__edit-mobile-active">
                         <div class="todo-list__inner-wrapper">
-                            <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                            <svg class="icon icon--bar">
+                                <use href="./src/img/sprite.svg#icon-clipboard"></use>
+                            </svg>
+                            <!-- <img class="todo-list__icon" src="./src/img/to-do-list.png" alt=""> -->
                             <span class="todo-list__name">Warnings </span>
                             <span class="todo-list__correct-block">
                                 <span class="todo-list__amount">3</span>
                                 <button class="todo-list__correct">
-                                    <img src="./src/img/pen.png" alt="correct">
+                                    <svg class="icon icon-icon--medium-size">
+                                        <use href="./src/img/sprite.svg#icon-pen"></use>
+                                    </svg>
                                 </button>
                             </span>
                         </div>
+
+    <!--! EDIT MOBILE                         -->
                         <ul class="todolist__edit-mobile">
                             <li class="todolist__edit-mobile-item">
                                 <button class="todolist__edit-mobile-btn">
-                                    <img class="todolist__edit-mobile-icon" src="./src/img/mute.png" alt="">
+                                    <!-- <img class="todolist__edit-mobile-icon" src="./src/img/mute.png" alt=""> -->
+                                    <svg class="icon icon--bar">
+                                        <use href="./src/img/sprite.svg#icon-mute"></use>
+                                    </svg>
+
                                     <span class="todolist__edit-mobile-text">Don`t disturbe
                                         <span class="todolist__edit-mobile-disturb-status">Off</span></span>
                                 </button>
                             </li>
                             <li class="todolist__edit-mobile-item">
                                 <button class="todolist__edit-mobile-btn">
-                                    <img class="todolist__edit-mobile-icon" src="./src/img/pen.png" alt="">
+                                    <svg class="icon icon-icon--medium-size">
+                                        <use href="./src/img/sprite.svg#icon-pen"></use>
+                                    </svg>
+                                    <!-- <img class="todolist__edit-mobile-icon" src="./src/img/pen.png" alt=""> -->
                                     <span class="todolist__edit-mobile-text">Rename</span>
                                 </button>
                             </li>
                             <li class="todolist__edit-mobile-item">
                                 <button class="todolist__edit-mobile-btn">
-                                    <img class="todolist__edit-mobile-icon" src="./src/img/trash.png" alt="">
+                                    <svg class="icon icon--bar">
+                                        <use href="./src/img/sprite.svg#icon-delete"></use>
+                                    </svg>
+
+                                    <!-- <img class="todolist__edit-mobile-icon" src="./src/img/trash.png" alt=""> -->
                                     <span class="todolist__edit-mobile-text">Delete</span>
                                 </button>
                             </li>
@@ -179,12 +290,17 @@
                     </li>
                     <li class="todo-list inactive">
                         <div class="todo-list__inner-wrapper">
-                            <img class="todo-list__icon" src="./src/img/to-do-list.png" alt="">
+                            <svg class="icon icon--bar">
+                                <use href="./src/img/sprite.svg#icon-clipboard"></use>
+                            </svg>
+                            <!-- <img class="todo-list__icon" src="./src/img/to-do-list.png" alt=""> -->
                             <span class="todo-list__name">User folder</span>
                             <span class="todo-list__correct-block">
                                 <span class="todo-list__amount">3</span>
                                 <button class="todo-list__correct">
-                                    <img src="./src/img/pen.png" alt="correct">
+                                    <svg class="icon icon-icon--medium-size">
+                                        <use href="./src/img/sprite.svg#icon-pen"></use>
+                                    </svg>
                                 </button>
                             </span>
                         </div>
@@ -193,14 +309,12 @@
                 </ul>
                 <button class="add-folder">+</button>
             </div>
-
+    <!--! EDIT MOBILE                         -->
 <!-- !BAR -->
 
             <div class="todos">
-                <header>
-                    <!-- <button class="user-photo">
-                        <img src="./src/img/logo.jpg" alt="user photo">
-                    </button> -->
+                <!--! MOBILE HEADER -->
+                <!-- <header>
                     <button class="back-page-btn">
                         <img src="./src/img/left-arrow.png" alt="">
                     </button>
@@ -212,26 +326,38 @@
                             <img src="./src/img/bell.png" alt="notification">
                         </button>
                     </div>
-                </header>
+                </header> -->
+                <!--! MOBILE HEADER -->
+
                 <div class="add-todo-wrapper">
                     <input class="add-todo" type="text" placeholder="+ Add todo">
                 </div>
-                <!-- SETTINGS SETTINGS -->
+                <!--! SETTINGS SETTINGS -->
 
-                <!-- <div class="settings">
+                <div class="settings">
                     <h2 class="settings__header">Settings</h2>
                     <ul class="settings__parts">
                         <li class="settings__part">
                             <button class="settings__open-part-btn">
-                                <span class="settings__part-name">Profile</span>
-                                <img class="settings__open-part-btn-icon" src="./src/img/down-arrow.png" alt="">
+                                <span class="settings__part-name-wrapper">
+                                    <svg class="icon">
+                                        <use href="./src/img/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    <span class="settings__part-name">Profile</span>
+                                </span>
+                                <svg class="icon">
+                                    <use href="./src/img/sprite.svg#icon-down-arrow"></use>
+                                    <use href="./src/img/sprite.svg#icon-up-arrow"></use>
+                                </svg>
                             </button>
                             <ul class="settings__list">
                                 <li class="settings__list-item">
                                     <div class="settings__value">
                                         Name: <span></span>
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="name">
@@ -240,7 +366,9 @@
                                     <div class="settings__value">
                                         Surename <span></span>:
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="surename">
@@ -249,7 +377,9 @@
                                     <div class="settings__value">
                                         Birthday <span></span>:
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="birthdata">
@@ -258,7 +388,9 @@
                                     <div class="settings__value">
                                         Country: <span></span>
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="country">
@@ -267,7 +399,9 @@
                                     <div class="settings__value">
                                         City:<span></span>
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input" type="text" placeholder="city">
@@ -276,8 +410,17 @@
                         </li>
                         <li class="settings__part">
                             <button class="settings__open-part-btn">
-                                <span class="settings__part-name">Security</span>
-                                <img class="settings__open-part-btn-icon" src="./src/img/down-arrow.png" alt="">
+                                <span class="settings__part-name-wrapper">
+                                    <svg class="icon">
+                                        <use href="./src/img/sprite.svg#icon-key"></use>
+                                    </svg>
+                                    <span class="settings__part-name">Security</span>
+                                </span>
+                                <svg class="icon">
+                                    <use href="./src/img/sprite.svg#icon-down-arrow"></use>
+                                    <use href="./src/img/sprite.svg#icon-up-arrow"></use>
+
+                                </svg>
                             </button>
                             <ul class="settings__list">
                                 <li class="settings__list-item">
@@ -291,7 +434,9 @@
                                     <div class="settings__value">
                                         Phone number: <span>+380689308684</span>
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input security-input" type="text" placeholder="old phone">
@@ -301,7 +446,9 @@
                                     <div class="settings__value">
                                         Email: <span>vitaliidrapaliuk@gmail.com</span>
                                         <button class="settings__change-btn">
-                                            <img src='./src/img/pen.png' alt='correct'>
+                                            <svg class="icon--medium-size">
+                                                <use href="./src/img/sprite.svg#icon-pen"></use>
+                                            </svg>
                                         </button>
                                     </div>
                                     <input class="settings__input security-input" type="text" placeholder="old email">
@@ -309,10 +456,45 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul>
-                </div> -->
+                        <li class="settings__part">
+                            <button class="settings__open-part-btn">
+                                <span class="settings__part-name-wrapper">
+                                    <svg class="icon">
+                                        <use href="./src/img/sprite.svg#icon-translation"></use>
+                                    </svg>
+                                    <span class="settings__part-name">Language</span>
+                                </span>
+                                <svg class="icon">
+                                    <use href="./src/img/sprite.svg#icon-down-arrow"></use>
+                                    <use href="./src/img/sprite.svg#icon-up-arrow"></use>
+                                </svg>
+                            </button>
+                            <ul class="settings__list">
+                                <li class="settings__list-item">
+                                    <div class="selected-language">
+                                        English
+                                        <svg class="icon">
+                                            <use href="./src/img/sprite.svg#icon-united-kingdom"></use>
+                                        </svg>
+                                    </div>
+                                    <ul class="languages__list">
+                                        <li class="language">
+                                            <button class="language-btn">
+                                                Ukraine
+                                                <svg class="icon">
+                                                    <use href="./src/img/sprite.svg#icon-ukraine"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    
 
-                <!-- SETTINGS SETTINGS -->
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--! SETTINGS SETTINGS -->
 
                 <!-- EDIT LIST -->
                 <!-- <div class="edit-list">
@@ -338,43 +520,59 @@
 
                 <!-- TODOS! -->
                 <!-- TODOS UNCOMPLETED! -->
-                <!-- <ul class="uncompleted-todo-list">
+                <ul class="uncompleted-todo-list">
                     <li class="uncompleted-todo-item">
                         <div class="uncompleted-todo">
                             <input class="uncompleted-todo__check" type="checkbox">
                             <div class="uncompleted-todo__text">Todo text</div>
                             <button class="pin-button">
-                                <img class="pin-icon" src="./src/img/pin.png" alt="star">
+                                <svg class="icon icon__todo-icon icon__pin--active">
+                                    <use href="./src/img/sprite.svg#icon-paper-push-pin"></use>
+                                </svg>
                             </button>
+    
                             <button class="importantly-button">
-                                <img class="importantly-icon" src="./src/img/star-active.png" alt="star">
+                                <svg class="icon icon__todo-icon icon__star--active">
+                                    <use href="./src/img/sprite.svg#icon-star"></use>
+                                </svg>
                             </button>
                         </div>
+
+
+                        
+                        
+                        
+
+
                         <div class="todo-full-info-mobile">
                             <div class="todo-full-info-wrapper">
                                 <div class="full-text">
                                     <input type="checkbox" class="full-info-check-todo">
                                     <textarea class="todo-change-text" name="" placeholder="fulltext"></textarea>
-                                    <button class="importantly-button-full-info">
-                                        <img class="importantly-icon-full-info" src="./src/img/star-empty.png" alt="star">
-                                    </button>
                                 </div>
     
                                 <div class="todo-options-wrapper">
                                     <ul class="todo-options">
                                         <li class="make-to-date">
-                                            <img class="todo-options-icon" src="./src/img/calendar_bw.png" alt="calendar">
+                                            <svg class="icon icon--full-info-options">
+                                                <use href="./src/img/sprite.svg#icon-calendara_bw"></use>
+                                            </svg>
                                             <input class="todo-options-input" placeholder="Встановити термін">
                                             <button class="clear-option-item">
-                                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                <svg class="icon icon--small-size">
+                                                    <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                                </svg>
                                             </button>
                                         </li>
                                         <li class="remind-me">
-                                            <img class="todo-options-icon" src="./src/img/alarm-clock.png"
-                                                alt="alarm clock">
+                                            <svg class="icon icon--full-info-options">
+                                                <use href="./src/img/sprite.svg#icon-alarm-clock"></use>
+                                            </svg>
                                             <input class="todo-options-input" placeholder="Нагадати">
                                             <button class="clear-option-item">
-                                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                <svg class="icon icon--small-size">
+                                                    <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                                </svg>
                                             </button>
                                         </li>
                                     </ul>
@@ -389,14 +587,18 @@
                                                 <input class="check-subtask" type="checkbox">
                                                 <span class="subtask-text">Some text</span>
                                                 <button class="delete-subtask">
-                                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                    <svg class="icon icon--small-size">
+                                                        <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                                    </svg>
                                                 </button>
                                             </li>
                                             <li class="subtask">
                                                 <input class="check-subtask" type="checkbox">
                                                 <span class="subtask-text">Some text</span>
                                                 <button class="delete-subtask">
-                                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                    <svg class="icon icon--small-size">
+                                                        <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                                    </svg>
                                                 </button>
                                             </li>
                                         </ul>
@@ -410,11 +612,16 @@
                                         <li class="comment">
                                             <span class="comment-text">Some text</span>
                                             <button class="delete-comment">
-                                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                                <svg class="icon icon--small-size">
+                                                    <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                                </svg>
                                             </button>
                                         </li>
                                     </ul>
                                 </div>
+                                
+                                
+                                
     
     
                                 <div class="todo-manipulations-wrapper">
@@ -424,12 +631,15 @@
                                     </form>
                                     <div class="todo-manipulations">
                                         <button class="close-todo-info">
-                                            <img class="todo-manipulations-icons" src="./src/img/right-arrow.png"
-                                                alt="close">
+                                            <svg class="icon">
+                                                <use href="./src/img/sprite.svg#icon-up-arrow"></use>
+                                            </svg>
                                         </button>
                                         <p class="creted-by">created yesterday by me</p>
                                         <button class="delete-todo">
-                                            <img class="todo-manipulations-icons" src="./src/img/trash.png" alt="delete">
+                                            <svg class="icon">
+                                                <use href="./src/img/sprite.svg#icon-delete"></use>
+                                            </svg>
                                         </button>
                                     </div>
     
@@ -442,20 +652,29 @@
                             <input class="uncompleted-todo__check" type="checkbox">
                             <div class="uncompleted-todo__text">Todo text</div>
                             <button class="pin-button">
-                                <img class="pin-icon" src="./src/img/unpin.png" alt="star">
+                                <svg class="icon icon__todo-icon icon__pin--inactive">
+                                    <use href="./src/img/sprite.svg#icon-paper-push-pin"></use>
+                                </svg>
                             </button>
     
                             <button class="importantly-button">
-                                <img class="importantly-icon" src="./src/img/star-empty.png" alt="star">
+                                <svg class="icon icon__todo-icon icon__star--inactive">
+                                    <use href="./src/img/sprite.svg#icon-star"></use>
+                                </svg>
                             </button>
                         </div>
                     </li>
-                </ul> -->
+                </ul>
                 <!-- TODOS UNCOMPLETED! -->
                 <!-- TODOS COMPLETED! -->
-                <!-- <div class="visible-completed-todos-wrapper">
+                <div class="visible-completed-todos-wrapper">
                     <button class="visible-completed-todos-button">completed item</button>
-                    <span class="eye-visible">&#128065;</span>
+                    <svg class="icon ">
+                        <use href="./src/img/sprite.svg#icon-eye"></use>
+                    </svg>
+                    <!-- <svg class="icon ">
+                        <use href="./src/img/sprite.svg#icon-eye-blocked"></use>
+                    </svg> -->
                 </div>
                 <ul class="completed-todo-list">
                     <li class="completed-todo">
@@ -466,7 +685,7 @@
                         <input class="completed-todo__check" type="checkbox">
                         <div class="completed-todo__text">Todo text</div>
                     </li>
-                </ul> -->
+                </ul>
                 <!-- TODOS COMPLETED! -->
 
                 <!-- TODOS! -->
@@ -478,80 +697,113 @@
                     <ul class="options-list-popup">
                         <li class="todos-option">
                             <button class="todos-option-btn">
-                                <img class="todos-option-icon" src="./src/img/mute.png" alt="">
+                                <svg class="icon icon--todo-settings icon--mute-active">
+                                    <use href="./src/img/sprite.svg#icon-mute"></use>
+                                </svg>
                                 <span class="todos-option-text">Don`t disturbe <span
                                         class="disturb-status">Off</span></span>
                             </button>
                         </li>
                         <li class="todos-option">
                             <button class="todos-option-btn">
-                                <img class="todos-option-icon" src="./src/img/image.png" alt="">
+                                <svg class="icon icon--todo-settings">
+                                    <use href="./src/img/sprite.svg#icon-image"></use>
+                                </svg>
                                 <span class="todos-option-text">Theme of list</span>
                             </button>
                         </li>
                         <li class="todos-option">
                             <button class="todos-option-btn">
-                                <img class="todos-option-icon" src="./src/img/sort.png" alt="">
+                                <svg class="icon icon--todo-settings">
+                                    <use href="./src/img/sprite.svg#icon-descendant"></use>
+                                </svg>
                                 <span class="todos-option-text">Sort Alphabetically</span>
                             </button>
                         </li>
                         <li class="todos-option">
                             <button class="todos-option-btn">
-                                <img class="todos-option-icon" src="./src/img/calendarbw.png" alt="">
+                                <svg class="icon icon--todo-settings">
+                                    <use href="./src/img/sprite.svg#icon-calendara_bw"></use>
+                                </svg>
                                 <span class="todos-option-text">Sort by Due Date</span>
                             </button>
                         </li>
                         <li class="todos-option">
                             <button class="todos-option-btn">
-                                <img class="todos-option-icon" src="./src/img/wall-clock.png" alt="">
+                                <svg class="icon icon--todo-settings">
+                                    <use href="./src/img/sprite.svg#icon-wall-clock"></use>
+                                </svg>
                                 <span class="todos-option-text">Sort bt Creation Date</span>
                             </button>
                         </li>
                         <li class="todos-option">
                             <button class="todos-option-btn">
-                                <img class="todos-option-icon" src="./src/img/star-empty.png" alt="">
+                                <svg class="icon icon__star--inactive">
+                                    <use href="./src/img/sprite.svg#icon-star"></use>
+                                </svg>
                                 <span class="todos-option-text">Sort by Priority</span>
                             </button>
                         </li>
                     </ul>
                     <div class="todos-settings-btn-wrapper">
                         <button class="todos-settings-sort-btn">
-                            <img class="todos-settings-btn-icon" src="./src/img/sort.png" alt="sort-icon">
+                            <svg class="icon todos-settings-btn-icon">
+                                <use href="./src/img/sprite.svg#icon-descendant"></use>
+                            </svg>
                             <span class="todo-settings-btn-text">sort</span>
                         </button>
-                        <button class="todos-settings-more-btn todos-settings-btn-active">
-                            <img class="todos-settings-btn-icon" src="./src/img/more.png" alt="more icon">
+                        <button class="todos-settings-more-btn todo-settings-btn-text--active">
+                            <svg class="icon todos-settings-btn-icon icon--todo-settings-active">
+                                <use href="./src/img/sprite.svg#icon-more"></use>
+                            </svg>
                             <span class="todo-settings-btn-text">more</span>
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- TODOS SETTINGS -->
+            <!--! TODOS SETTINGS -->
 
+
+
+
+
+
+            <!--! TODO FULL INFO -->
             <div class="todo-full-info-wrapper desktop">
                 <div class="full-text">
                     <input type="checkbox" class="full-info-check-todo">
 
                     <textarea class="todo-change-text" name="" placeholder="fulltext"></textarea>
                     <button class="importantly-button-full-info">
-                        <img class="importantly-icon-full-info" src="./src/img/star-empty.png" alt="star">
+                        <svg class="icon icon--medium-size icon__star--inactive">
+                            <use href="./src/img/sprite.svg#icon-star "></use>
+                        </svg>
                     </button>
                 </div>
 
                 <div class="todo-options-wrapper">
                     <ul class="todo-options">
                         <li class="make-to-date">
-                            <img class="todo-options-icon" src="./src/img/calendar_bw.png" alt="calendar">
+                            <svg class="icon icon--full-info-options">
+                                <use href="./src/img/sprite.svg#icon-calendara_bw"></use>
+                            </svg>
                             <input class="todo-options-input" placeholder="Встановити термін">
                             <button class="clear-option-item">
-                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                <svg class="icon icon--small-size">
+                                    <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                </svg>
                             </button>
                         </li>
+
                         <li class="remind-me">
-                            <img class="todo-options-icon" src="./src/img/alarm-clock.png" alt="alarm clock">
+                            <svg class="icon icon--full-info-options">
+                                <use href="./src/img/sprite.svg#icon-alarm-clock"></use>
+                            </svg>
                             <input class="todo-options-input" placeholder="Нагадати">
                             <button class="clear-option-item">
-                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                <svg class="icon icon--small-size">
+                                    <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                </svg>
                             </button>
                         </li>
                     </ul>
@@ -566,14 +818,18 @@
                                 <input class="check-subtask" type="checkbox">
                                 <span class="subtask-text">Some text</span>
                                 <button class="delete-subtask">
-                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                    <svg class="icon icon--small-size">
+                                        <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                    </svg>
                                 </button>
                             </li>
                             <li class="subtask">
                                 <input class="check-subtask" type="checkbox">
                                 <span class="subtask-text">Some text</span>
                                 <button class="delete-subtask">
-                                    <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                    <svg class="icon icon--small-size">
+                                        <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                    </svg>
                                 </button>
                             </li>
                         </ul>
@@ -586,11 +842,17 @@
                         <li class="comment">
                             <span class="comment-text">Some text</span>
                             <button class="delete-comment">
-                                <img class="close-icon" src="./src/img/close-icon.png" alt="">
+                                <svg class="icon icon--small-size">
+                                    <use href="./src/img/sprite.svg#icon-cancel"></use>
+                                </svg>
                             </button>
                         </li>
                     </ul>
                 </div>
+
+
+                
+
 
 
                 <div class="todo-manipulations-wrapper">
@@ -600,16 +862,21 @@
                     </form>
                     <div class="todo-manipulations">
                         <button class="close-todo-info">
-                            <img class="todo-manipulations-icons" src="./src/img/right-arrow.png" alt="close">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-arrow-right"></use>
+                            </svg>
                         </button>
                         <p class="creted-by">created yesterday by me</p>
                         <button class="delete-todo">
-                            <img class="todo-manipulations-icons" src="./src/img/trash.png" alt="delete">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-delete"></use>
+                            </svg>
                         </button>
                     </div>
 
                 </div>
             </div>
+            <!--! TODO FULL INFO -->
         </div>
     </div>
 </body>
