@@ -1,4 +1,5 @@
-.registration {
+.registration,
+.login {
     padding-top: 60px;
     max-width: 350px;
     width: 100%;
@@ -9,7 +10,8 @@
     padding-bottom: 60px;
 }
 
-.registration__icon-background {
+.registration__icon-background,
+.login__icon-background {
     background-color: hsla(204, 100%, 39%, .9);
     box-shadow: 0 0 2px #0077c8;
     width: 110px;
@@ -26,17 +28,21 @@
 
 
 
-.registration__header {
-    color: gray;
+.registration__header,
+.login__header {
+    color: hsla(0, 0%, 50%, 1);
     font-weight: normal;
 }
 
-.registration__form {
+.registration__form,
+.login__form {
 
 }
 
 .registration__input-wrapper,
-.registration__btn-wrapper {
+.registration__btn-wrapper,
+.login__input-wrapper,
+.login__btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,41 +54,61 @@
     margin-bottom: 5px;
 }
 
-.registration__input-wrapper {
+.registration__input-wrapper,
+.login__input-wrapper {
     padding-left: 10px;
     position: relative;
 }
 
-.registration__valid-message {
+.registration__invalid-data,
+.login__invalid-data {
+    border: 2px solid hsla(1, 50%, 40%, 1);
+    fill:hsla(1, 50%, 40%, 1);
+}
+
+.registration__valid-data,
+.login__valid-data {
+    fill: #279b37;
+}
+
+.registration__valid-message,
+.login__valid-message {
+    min-width: 250px;
+    text-align: left;
     position: absolute;
     left: 0;
+    transform: translateX(-105%);
     height: 38px;
     z-index: 99999;
-    background-color: hsla(0, 100%, 100%, .79);
+    background-color: hsla(1, 47%, 52%, .85);
     padding: 3px 7px;
     font-size: 14px;
-    border: 1px solid rgb(196, 188, 188);
-    color: #b52e31;
-    
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid #9a3433;
 }
 
-.registration__valid-message--login {
-    top: 0;
-    transform: translateY(-120%);
-
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+    border-left: 10px solid hsla(1, 50%, 40%, .80);
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(100%, -50%);
 }
-.registration__valid-message--password {
-    bottom: 0;
-    transform: translateY(110%);
 
-}
 
-.registration__input-wrapper label {
+.registration__input-wrapper label,
+.login__input-wrapper label {
     margin-right: 15px;
     cursor: pointer;
 }
 
-.registration__btn-wrapper {
+.registration__btn-wrapper,
+.login__btn-wrapper {
     background-color: transparent;
     margin-bottom: 0;
     margin-top: 15px;
@@ -92,7 +118,10 @@
 
 .registration__passsword,
 .registration__login,
-.registration__btn-done {
+.registration__btn-done,
+.login__passsword,
+.login__login,
+.login__btn-done {
     display: block;
     height: 45px;
     outline: none;
@@ -102,15 +131,9 @@
 }
 
 
-.registration__passsword {
 
-}
-
-.registration__login {
-    
-}
-
-.registration__btn-done {
+.registration__btn-done,
+.login__btn-done {
     background-color: #0077c8;
     cursor: pointer;
     color: #fff;
@@ -119,24 +142,57 @@
     height: 45px;
 }
 
-
-
-.triangle-up {
-    position: absolute;
-    top: 0;
-    left: 0;
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-    border-bottom: 10px solid #000;
-    transform: translateY(-100%);
+.login__service-panel {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: gray;
+    
 }
 
-.triangle-down {
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 20px solid red;
+.login__remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        background-color: red;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+
+    label {
+        cursor: pointer;
+        transition: all .3s linear;
+        &:hover {
+            color: #000;
+        }
+    }
 }
+
+.login__forgot-password {
+    color: gray;
+    transition: all .3 linear;
+    &:hover {
+        color: #000;
+    }
+}
+
+
+
+.login__forgot-password {
+    text-decoration: none;
+}
+
+.login__register-link-wrapper {
+    display: flex;
+}
+
+
+

@@ -15,7 +15,7 @@
 <body class="dark">
     <div id="root">
         <div class="authorization">
-                <!-- <div class="introduction">
+            <!-- <div class="introduction">
                     <h1>Welcome to Wunderlist!</h1>
                     <button class="introduction__login-btn">
                         login
@@ -27,8 +27,8 @@
                         guest
                     </button>
                 </div> -->
-                
-                <div class="registration">
+            <!--! REGISTRATION -->
+            <!-- <div class="registration">
                     <div class="registration__icon-background">
                         <svg class="icon__registration">
                             <use href="./src/img/sprite.svg#icon-user-empty-fill"></use>
@@ -36,25 +36,28 @@
                     </div>
                     <h2 class="registration__header">Registration</h2>
                     <form class="registration__form">
-                        <div class="registration__input-wrapper">
+                        <div class="registration__input-wrapper registration__valid-data">
                             <label for="registration-login">
                                 <svg class="icon">
                                     <use href="./src/img/sprite.svg#icon-user"></use>
                                 </svg>
                             </label>
                             <input class="registration__login" id='registration-login' type="text" placeholder="login">
-                            <div class="registration__valid-message registration__valid-message--login">messagasdasdasdasdasdase</div>
+                             <div class="registration__valid-message">
+                                
+                                <div class="triangle-right"></div>
+                            </div>
                         </div>
-                        <div class="registration__input-wrapper">
+                        <div class="registration__input-wrapper registration__invalid-data">
                             <label for="registration-password">
                                 <svg class="icon">
                                     <use href="./src/img/sprite.svg#icon-lock"></use>
                                 </svg>
                             </label>
                             <input class="registration__passsword" id='registration-password' type="password" placeholder="password">
-                            <div class="registration__valid-message registration__valid-message--password">
-                                <div class="triangle-up"></div>
-                                message
+                            <div class="registration__valid-message">
+                                <div class="triangle-right"></div>
+                                Пароль має бути не менше 6 символів
                             </div>
                         
                         </div>
@@ -62,21 +65,66 @@
                         <button class="registration__btn-done">Sign In</button>
                         </div>
                     </form>
-                </div>
- <!--
-                <div class="login">
-                    <form action="">
-                        <input type="text" placeholder="text">
-                        <input type="password" placeholder="password">
-                        <button>Login</button>
-                    </form>
-                    <div>
-                        <button>Restore pasword</button>
-                        <button>registration</button>
-                    </div>
                 </div> -->
-            </d>
-         <div class="container">
+            <!--! REGISTRATION -->
+            <div>
+                
+            </div>
+            <div class="registration">
+                <div class="registration__icon-background">
+                    <svg class="icon__registration">
+                        <use href="./src/img/sprite.svg#icon-user-empty-fill"></use>
+                    </svg>
+                </div>
+                <h2 class="registration__header">Log in</h2>
+                <form class="registration__form">
+                    <div class="registration__input-wrapper registration__valid-data">
+                        <label for="registration-login">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-user"></use>
+                            </svg>
+                        </label>
+                        <input class="registration__login" id='registration-login' type="text" placeholder="login">
+                        <!-- <div class="registration__valid-message">
+                                
+                                <div class="triangle-right"></div>
+                            </div> -->
+                    </div>
+                    <div class="registration__input-wrapper registration__invalid-data">
+                        <label for="registration-password">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-lock"></use>
+                            </svg>
+                        </label>
+                        <input class="registration__passsword" id='registration-password' type="password"
+                            placeholder="password">
+                        <div class="registration__valid-message">
+                            <div class="triangle-right"></div>
+                            Пароль має бути не менше 6 символів
+                        </div>
+
+                    </div>
+                    <div class="registration__btn-wrapper">
+                        <button class="registration__btn-done">Sign In</button>
+                    </div>
+                </form>
+                <div class="login__service-panel">
+                    <div class="login__remember-me">
+                        <input id="remember_me" type="checkbox">
+                        <label for="remember_me">Remember me</label>
+                    </div>
+                    <a class="login__forgot-password" href="#">Forgot Password</a>
+                </div>
+                <div class="login__register-link-wrapper">
+                    <p>Don`t have account? <a href="#">REGISTER HERE</a> </p>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="container">
 
             <!-- !BAR  -->
             <div class="bar dark">
@@ -96,10 +144,10 @@
                             </svg>
                         </button>
                     </div>
-                    
-                    
+
+
                 </header>
-          <!-- !NOTIFICATION       -->
+                <!-- !NOTIFICATION       -->
                 <!-- <ul class="notification">
                     <li class="notification__item">
                         <button class="notification__btn">
@@ -110,7 +158,7 @@
                         </button>
                     </li>
                 </ul> -->
-          <!-- !NOTIFICATION       -->
+                <!-- !NOTIFICATION       -->
 
 
                 <ul class="app-bookmarks">
@@ -141,8 +189,8 @@
                     </li>
 
                 </ul>
-                
-                
+
+
 
                 <ul class="todo-lists">
                     <li class="new_folder">
@@ -151,7 +199,7 @@
                                 <use href="./src/img/sprite.svg#icon-folder"></use>
                             </svg>
                         </div>
-                        
+
 
                         <!-- <img class="folder-icon" src="./src/img/folder.png" alt="folder"> -->
                         <input class="new-folder-name-input" type="text" placeholder="folder name">
@@ -254,7 +302,7 @@
                             </span>
                         </div>
 
-    <!--! EDIT MOBILE                         -->
+                        <!--! EDIT MOBILE                         -->
                         <ul class="todolist__edit-mobile">
                             <li class="todolist__edit-mobile-item">
                                 <button class="todolist__edit-mobile-btn">
@@ -304,13 +352,13 @@
                                 </button>
                             </span>
                         </div>
-                        
+
                     </li>
                 </ul>
                 <button class="add-folder">+</button>
             </div>
-    <!--! EDIT MOBILE                         -->
-<!-- !BAR -->
+            <!--! EDIT MOBILE                         -->
+            <!-- !BAR -->
 
             <div class="todos">
                 <!--! MOBILE HEADER -->
@@ -425,9 +473,12 @@
                             <ul class="settings__list">
                                 <li class="settings__list-item">
                                     <button class="settings__change-password-btn">Change password</button>
-                                    <input class="settings__input security-input" type="password" placeholder="old password">
-                                    <input class="settings__input security-input" type="password" placeholder="new password">
-                                    <input class="settings__input security-input" type="password" placeholder="new password">
+                                    <input class="settings__input security-input" type="password"
+                                        placeholder="old password">
+                                    <input class="settings__input security-input" type="password"
+                                        placeholder="new password">
+                                    <input class="settings__input security-input" type="password"
+                                        placeholder="new password">
 
                                 </li>
                                 <li class="settings__list-item">
@@ -487,7 +538,7 @@
                                             </button>
                                         </li>
                                     </ul>
-                                    
+
 
                                 </li>
                             </ul>
@@ -530,7 +581,7 @@
                                     <use href="./src/img/sprite.svg#icon-paper-push-pin"></use>
                                 </svg>
                             </button>
-    
+
                             <button class="importantly-button">
                                 <svg class="icon icon__todo-icon icon__star--active">
                                     <use href="./src/img/sprite.svg#icon-star"></use>
@@ -539,9 +590,9 @@
                         </div>
 
 
-                        
-                        
-                        
+
+
+
 
 
                         <div class="todo-full-info-mobile">
@@ -550,7 +601,7 @@
                                     <input type="checkbox" class="full-info-check-todo">
                                     <textarea class="todo-change-text" name="" placeholder="fulltext"></textarea>
                                 </div>
-    
+
                                 <div class="todo-options-wrapper">
                                     <ul class="todo-options">
                                         <li class="make-to-date">
@@ -576,7 +627,7 @@
                                             </button>
                                         </li>
                                     </ul>
-    
+
                                     <div class="subtask-wrapper">
                                         <form class="add-subtask-form">
                                             <button type="submit">+</button>
@@ -607,7 +658,7 @@
                                         <textarea class="note" name="" id="" cols="30" rows="10"
                                             placeholder="Add note"></textarea>
                                     </div>
-    
+
                                     <ul class="comments">
                                         <li class="comment">
                                             <span class="comment-text">Some text</span>
@@ -619,11 +670,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
-                                
-                                
-    
-    
+
+
+
+
+
                                 <div class="todo-manipulations-wrapper">
                                     <form class="add-comment-form">
                                         <input class="add-comment" type="text" placeholder="Add comment...">
@@ -642,7 +693,7 @@
                                             </svg>
                                         </button>
                                     </div>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -656,7 +707,7 @@
                                     <use href="./src/img/sprite.svg#icon-paper-push-pin"></use>
                                 </svg>
                             </button>
-    
+
                             <button class="importantly-button">
                                 <svg class="icon icon__todo-icon icon__star--inactive">
                                     <use href="./src/img/sprite.svg#icon-star"></use>
@@ -851,7 +902,7 @@
                 </div>
 
 
-                
+
 
 
 
