@@ -14,19 +14,49 @@
 
 <body class="dark">
     <div id="root">
+        <!--! AUTH -->
+
         <div class="authorization">
+            <!--! LANGUAGE -->
+            <!-- <div class="authorization-languages">
+                <div class="authorization-languages__selected-languages">
+                    <button class="authorization-languages__btn">
+                        <span class="authorization-languages__btn-text">eng</span>
+                        <svg class="authorization-languages__icon">
+                            <use href="./src/img/sprite.svg#icon-united-kingdom"></use>
+                        </svg>
+                    </button>
+                   
+                </div>
+                <ul class="authorization-languages__list">
+                    <li class="authorization-languages__language">
+                        <button class="authorization-languages__btn">
+                            <span class="authorization-languages__btn-text">ukr</span>
+                            <svg class="authorization-languages__icon">
+                                <use href="./src/img/sprite.svg#icon-ukraine"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div> -->
+            <!--! LANGUAGE -->
+            <!--! INTRODUCTION -->
             <!-- <div class="introduction">
                     <h1>Welcome to Wunderlist!</h1>
-                    <button class="introduction__login-btn">
-                        login
-                    </button>
-                    <button class="introduction__signin-btn">
-                        sign in
-                    </button>
-                    <button class="introduction__guest-btn">
-                        guest
-                    </button>
+                    <div class="introduction__btn-wrapper">
+                        <a href="#" class="introduction__login-link">
+                            login
+                        </a>
+                        <a href="#" class="introduction__signin-link">
+                            sign in
+                        </a>
+                        <a href="#" class="introduction__guest-link">
+                            guest
+                        </a>
+                    </div>
                 </div> -->
+            <!--! INTRODUCTION -->
+
             <!--! REGISTRATION -->
             <!-- <div class="registration">
                     <div class="registration__icon-background">
@@ -43,10 +73,6 @@
                                 </svg>
                             </label>
                             <input class="registration__login" id='registration-login' type="text" placeholder="login">
-                             <div class="registration__valid-message">
-                                
-                                <div class="triangle-right"></div>
-                            </div>
                         </div>
                         <div class="registration__input-wrapper registration__invalid-data">
                             <label for="registration-password">
@@ -57,9 +83,15 @@
                             <input class="registration__passsword" id='registration-password' type="password" placeholder="password">
                             <div class="registration__valid-message">
                                 <div class="triangle-right"></div>
+                                <div class="triangle-down"></div>
+
                                 Пароль має бути не менше 6 символів
                             </div>
-                        
+                            <button class="authorization__show-invalid-message">
+                            <svg class="authorization__invalid-icon">
+                                <use href="./src/img/sprite.svg#icon-warning-sign"></use>
+                            </svg>
+                        </button>
                         </div>
                         <div class="registration__btn-wrapper">
                         <button class="registration__btn-done">Sign In</button>
@@ -67,45 +99,44 @@
                     </form>
                 </div> -->
             <!--! REGISTRATION -->
-            <div>
-                
-            </div>
-            <div class="registration">
-                <div class="registration__icon-background">
-                    <svg class="icon__registration">
+            <!--! LOGIN -->
+            <!-- <div class="login">
+                <div class="login__icon-background">
+                    <svg class="icon__login">
                         <use href="./src/img/sprite.svg#icon-user-empty-fill"></use>
                     </svg>
                 </div>
-                <h2 class="registration__header">Log in</h2>
-                <form class="registration__form">
-                    <div class="registration__input-wrapper registration__valid-data">
-                        <label for="registration-login">
+                <h2 class="login__header">Log in</h2>
+                <form class="login__form">
+                    <div class="login__input-wrapper login__valid-data">
+                        <label for="login-login">
                             <svg class="icon">
                                 <use href="./src/img/sprite.svg#icon-user"></use>
                             </svg>
                         </label>
-                        <input class="registration__login" id='registration-login' type="text" placeholder="login">
-                        <!-- <div class="registration__valid-message">
-                                
-                                <div class="triangle-right"></div>
-                            </div> -->
+                        <input class="login__login" id='login-login' type="text" placeholder="login">
                     </div>
-                    <div class="registration__input-wrapper registration__invalid-data">
-                        <label for="registration-password">
+                    <div class="login__input-wrapper login__invalid-data">
+                        <label for="login-password">
                             <svg class="icon">
                                 <use href="./src/img/sprite.svg#icon-lock"></use>
                             </svg>
                         </label>
-                        <input class="registration__passsword" id='registration-password' type="password"
+                        <input class="login__passsword" id='login-password' type="password"
                             placeholder="password">
-                        <div class="registration__valid-message">
+                        <div class="login__valid-message">
                             <div class="triangle-right"></div>
+                            <div class="triangle-down"></div>
                             Пароль має бути не менше 6 символів
                         </div>
-
+                        <button class="authorization__show-invalid-message">
+                            <svg class="authorization__invalid-icon">
+                                <use href="./src/img/sprite.svg#icon-warning-sign"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="registration__btn-wrapper">
-                        <button class="registration__btn-done">Sign In</button>
+                    <div class="login__btn-wrapper">
+                        <button class="login__btn-done">Sign In</button>
                     </div>
                 </form>
                 <div class="login__service-panel">
@@ -115,17 +146,100 @@
                     </div>
                     <a class="login__forgot-password" href="#">Forgot Password</a>
                 </div>
-                <div class="login__register-link-wrapper">
-                    <p>Don`t have account? <a href="#">REGISTER HERE</a> </p>
-                    
+                <p class="login__register-link">Don`t have account? <a href="#">REGISTER HERE</a> </p> 
+            </div> -->
+            <!--! LOGIN -->
+            <!--! CHECK CODE -->
+            <!-- <div class="check-code">
+                <a href="#" class="check-code__cancel">
+                    <svg class="icon--small-size">
+                        <use href="./src/img/sprite.svg#icon-cancel"></use>
+                    </svg>
+                </a>
+                <div class="check-code__icon-background">
+                    <svg class="icon__check-code">
+                        <use href="./src/img/sprite.svg#icon-unlocked"></use>
+                        <use href="./src/img/sprite.svg#icon-lock"></use>
+                    </svg>                    
                 </div>
-            </div>
-            
-        </div>
-
+                <h2 class="check-code__header">Check code</h2>
+                <form class="check-code__form">
+                    <div class="check-code__input-wrapper check-code__valid-data">
+                        <label for="check-code-password">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-key"></use>
+                            </svg>
+                        </label>
+                        <input class="check-code__check-code" id='check-code-password' type="password" placeholder="code">
+                        <button class="authorization__show-invalid-message">
+                            <svg class="authorization__invalid-icon">
+                                <use href="./src/img/sprite.svg#icon-warning-sign"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="check-code__btn-wrapper">
+                        <button class="check-code__btn-done">Check</button>
+                    </div>
+                </form>
+                <a class="check-code__register-link" href="#">REGISTER HERE</a>
+            </div> -->
+            <!--! CHECK CODE -->
+            <!--! RESTORE PASSWORD -->
+            <!-- <div class="restore">
+                <a href="#" class="restore__cancel">
+                    <svg class="icon--small-size">
+                        <use href="./src/img/sprite.svg#icon-cancel"></use>
+                    </svg>
+                </a>
+                <div class="restore__icon-background">
+                    <svg class="icon__restore">
+                        <use href="./src/img/sprite.svg#icon-user-empty-fill"></use>
+                    </svg>
+                </div>
+                <h2 class="restore__header">Restore</h2>
+                <form class="restore__form">
+                    <div class="restore__input-wrapper restore__invalid-data">
+                        <label for="restore-password">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-key"></use>
+                            </svg>
+                        </label>
+                        <input class="restore__password" id='restore-password' type="password"
+                            placeholder="new password">
+                        <div class="restore__valid-message">
+                            <div class="triangle-right"></div>
+                            <div class="triangle-down"></div>
+                            Пароль має бути не менше 6 символів
+                        </div>
+                        <button class="authorization__show-invalid-message">
+                            <svg class="authorization__invalid-icon">
+                                <use href="./src/img/sprite.svg#icon-warning-sign"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="restore__input-wrapper restore__invalid-data">
+                        <label for="restore-password">
+                            <svg class="icon">
+                                <use href="./src/img/sprite.svg#icon-key"></use>
+                            </svg>
+                        </label>
+                        <input class="restore__password" id='restore-password' type="password"
+                            placeholder="new password">
+                        <div class="restore__valid-message">
+                            <div class="triangle-right"></div>
+                            Пароль має бути не менше 6 символів
+                        </div>
+                    </div>
+                    <div class="restore__btn-wrapper">
+                        <button class="restore__btn-done">Change</button>
+                    </div>
+                </form>
+            </div> -->
+            <!--! RESTORE-PASSWORD -->
+        <!-- </div> -->
+        <!--! AUTH -->
 
         <div class="container">
-
             <!-- !BAR  -->
             <div class="bar dark">
                 <header>

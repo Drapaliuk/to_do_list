@@ -1,5 +1,7 @@
 .registration,
-.login {
+.login,
+.check-code,
+.restore {
     padding-top: 60px;
     max-width: 350px;
     width: 100%;
@@ -10,8 +12,14 @@
     padding-bottom: 60px;
 }
 
+.login {
+    padding-bottom: 100px;
+}
+
 .registration__icon-background,
-.login__icon-background {
+.login__icon-background,
+.check-code__icon-background,
+.restore__icon-background {
     background-color: hsla(204, 100%, 39%, .9);
     box-shadow: 0 0 2px #0077c8;
     width: 110px;
@@ -29,20 +37,39 @@
 
 
 .registration__header,
-.login__header {
+.login__header,
+.check-code__header,
+.restore__header {
     color: hsla(0, 0%, 50%, 1);
     font-weight: normal;
+    text-align: center;
 }
 
 .registration__form,
-.login__form {
+.login__form,
+.restore__form {
+    @media (max-width: 767px) {
+        position: relative;
+    }
+}
 
+.icon__registration,
+.icon__login,
+.icon__check-code,
+.icon__restore {
+    width: 65px;
+    height: 65px;
+    fill: hsla(0, 100%, 100%, .9)
 }
 
 .registration__input-wrapper,
 .registration__btn-wrapper,
 .login__input-wrapper,
-.login__btn-wrapper {
+.login__btn-wrapper,
+.check-code__input-wrapper,
+.check-code__btn-wrapper,
+.restore__input-wrapper,
+.restore__btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,24 +82,35 @@
 }
 
 .registration__input-wrapper,
-.login__input-wrapper {
+.login__input-wrapper,
+.check-code__input-wrapper,
+.restore__input-wrapper {
     padding-left: 10px;
     position: relative;
+    @media (max-width: 767px) {
+        position: static;
+        
+    }
 }
 
 .registration__invalid-data,
-.login__invalid-data {
+.login__invalid-data,
+.check-code__invalid-data,
+.restore__invalid-data {
     border: 2px solid hsla(1, 50%, 40%, 1);
     fill:hsla(1, 50%, 40%, 1);
 }
 
 .registration__valid-data,
-.login__valid-data {
+.login__valid-data,
+.check-code__valid-data,
+.restore__valid-data {
     fill: #279b37;
 }
 
 .registration__valid-message,
-.login__valid-message {
+.login__valid-message,
+.restore__valid-message {
     min-width: 250px;
     text-align: left;
     position: absolute;
@@ -86,6 +124,13 @@
     border-radius: 4px;
     color: #fff;
     border: 1px solid #9a3433;
+    @media (max-width: 767px) {
+        min-width: 300px;
+        height: 45px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -130%)
+    }
 }
 
 .triangle-right {
@@ -98,6 +143,25 @@
     right: 0;
     top: 50%;
     transform: translate(100%, -50%);
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+
+.triangle-down {
+    @media (max-width: 768px) {
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%, 100%);
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid hsla(1, 50%, 40%, .80);
+    }
+
 }
 
 
@@ -121,25 +185,30 @@
 .registration__btn-done,
 .login__passsword,
 .login__login,
-.login__btn-done {
+.login__btn-done,
+.check-code__check-code,
+.check-code__btn-done,
+.restore__password,
+.restore__btn-done {
     display: block;
     height: 45px;
     outline: none;
     width: 100%;
     border: none;
     position: relative;
+    padding-left: 10px;
 }
 
 
-
 .registration__btn-done,
-.login__btn-done {
+.login__btn-done,
+.check-code__btn-done,
+.restore__btn-done {
     background-color: #0077c8;
     cursor: pointer;
     color: #fff;
     font-size: 1.5rem;
     font-weight: 300;
-    height: 45px;
 }
 
 .login__service-panel {
@@ -194,5 +263,50 @@
     display: flex;
 }
 
+.login__register-link,
+.check-code__register-link {
+    text-align: center;
+    color: gray;
+    position: absolute;
+    font-size: 13px;
+    bottom: 0;
+    width: 100%;
+    // left: 50%;
+    right: 50%;
+    transform: translateX(50%);
+    a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 5px;
+    }
+}
+
+.check-code__register-link {
+    bottom: 15px;
+}
+
+
+.restore__cancel,
+.check-code__cancel {
+    background-color:hsla(0, 0%, 50%, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    fill: hsla(0, 0%, 0%, .7);
+    transition: all .3s linear;
+    &:hover {
+        background-color:hsla(0, 0%, 50%, .7);
+        fill: hsla(0, 0%, 0%, 1);
+
+    }
+}
 
 

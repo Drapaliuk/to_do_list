@@ -1,0 +1,51 @@
+.authorization-languages {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999999999999999;
+    font-size: 13px;
+
+}
+
+.authorization-languages__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.authorization-languages__selected-languages {
+
+}
+
+.authorization-languages__list {
+    // margin-top: 5px;
+}
+
+.authorization-languages__btn {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 0 4px;
+    &:hover {
+        background-color: hsla(0, 0%, 50%, 1);
+    }
+}
+
+.authorization-languages__btn-text {
+    color: rgb(61, 59, 59);
+    font-weight: bold;
+}
+
+.authorization-languages__language {
+    margin-top: 3px;
+
+}
+
+
+
+

@@ -37,13 +37,12 @@ body img {
 }
 
 .container {
-    // max-width: 1900px;
     width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 3.5fr 1.5fr;
     height: 100vh;
-    display: none;
+    // display: none;
 
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
