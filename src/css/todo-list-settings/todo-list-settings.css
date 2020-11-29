@@ -1,0 +1,9 @@
+.todo-list-settings {
+  position: fixed;
+  bottom: 40px;
+  left: 45%;
+  transform: translateX(-45%); }
+  @media (max-width: 767px) {
+    .todo-list-settings {
+      bottom: 3vh;
+      position: fixed; } }

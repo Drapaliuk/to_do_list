@@ -21,8 +21,7 @@
 
 
 .todo-completed,
-.todo-uncompleted__inner-wrapper,
-.todo-completed__inner-wrapper {
+.todo-uncompleted__inner-wrapper {
     display: flex;
     height: 36px;
     padding: 7px 15px;
@@ -38,11 +37,8 @@
     }
 }
 
-
-
-
 .todo-uncompleted {
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
     background-color: #fff;
     border-radius: 4px;
     &.dark-theme {
@@ -150,3 +146,60 @@
     color: hsla(0, 0%, 0%, .5);
     background-color: transparent;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.todo {
+
+}
+
+.todo__manipulations {
+
+}
+
+
+.pin-btn {
+
+}
+
+.pin-btn__icon {
+
+}
+
+.important-btn {
+
+}
+
+.important-btn__icon {
+
+}
+
+
+
+.todo__check-input {
+
+}
+
+.todo__text {
+
+}
+
+.todo_completed {
+
+}
+
+.todo__manipulations_hidden {
+    display: none;
+}
+
+
+

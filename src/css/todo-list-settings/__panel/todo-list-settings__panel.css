@@ -1,0 +1,15 @@
+.todo-list-settings__panel {
+  padding: 8px 0;
+  width: 240px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: all .3s linear; }
+  .todo-list-settings__panel:hover {
+    background-color: white; }
+  @media (max-width: 767px) {
+    .todo-list-settings__panel {
+      padding: 4px 0;
+      background-color: rgba(255, 255, 255, 0.5); } }

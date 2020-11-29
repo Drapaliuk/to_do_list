@@ -1,0 +1,6 @@
+.pin-btn.pin-btn_todo {
+  position: absolute;
+  right: 33px; }
+  @media (max-width: 767px) {
+    .pin-btn.pin-btn_todo {
+      right: 3px; } }

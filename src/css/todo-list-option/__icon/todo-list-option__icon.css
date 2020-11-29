@@ -1,0 +1,6 @@
+.todo-list-option__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px; }
+  .todo-list-option__icon--active {
+    fill: #2b96f1; }

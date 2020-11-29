@@ -1,0 +1,21 @@
+.todo-list-settings-option {
+    background-color: hsla(0, 100%, 100%, .75);
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    outline: none;
+    padding-left: 12px;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: all .3s linear;
+
+    &:hover {
+        background-color: hsla(0, 100%, 100%, 1);
+    }
+
+    @media (max-width: 767px) {
+        background-color: hsla(0, 100%, 100%, .95);
+        display: none;
+    }
+}

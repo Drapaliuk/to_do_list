@@ -17,8 +17,7 @@
       padding-bottom: 130px; } }
 
 .todo-completed,
-.todo-uncompleted__inner-wrapper,
-.todo-completed__inner-wrapper {
+.todo-uncompleted__inner-wrapper {
   display: flex;
   height: 36px;
   padding: 7px 15px;
@@ -30,12 +29,10 @@
   margin-bottom: 5px; }
   @media (max-width: 767px) {
     .todo-completed,
-    .todo-uncompleted__inner-wrapper,
-    .todo-completed__inner-wrapper {
+    .todo-uncompleted__inner-wrapper {
       height: 41px; } }
 
 .todo-uncompleted {
-  margin-bottom: 5px;
   background-color: #fff;
   border-radius: 4px; }
   .todo-uncompleted.dark-theme {
@@ -113,3 +110,6 @@
 .uncompleted-todo__text.open-task {
   color: rgba(0, 0, 0, 0.5);
   background-color: transparent; }
+
+.todo__manipulations_hidden {
+  display: none; }

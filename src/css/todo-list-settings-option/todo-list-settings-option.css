@@ -1,0 +1,17 @@
+.todo-list-settings-option {
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  padding: 8px 0;
+  cursor: pointer;
+  outline: none;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  border: none;
+  transition: all .3s linear; }
+  .todo-list-settings-option:hover {
+    background-color: white; }
+  @media (max-width: 767px) {
+    .todo-list-settings-option {
+      background-color: rgba(255, 255, 255, 0.95);
+      display: none; } }

@@ -1,0 +1,12 @@
+.todos-settings.dark-theme .option__btn {
+  background-color: #303030;
+  color: #d1c3c3; }
+  .todos-settings.dark-theme .option__btn:hover {
+    background-color: #808080; }
+
+.todos-settings__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px; }
+  .todos-settings__icon--active {
+    fill: #2b96f1; }

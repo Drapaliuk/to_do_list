@@ -1,0 +1,6 @@
+.importantly-btn.importantly-btn_todo {
+  position: absolute;
+  right: 0; }
+  @media (max-width: 767px) {
+    .importantly-btn.importantly-btn_todo {
+      right: 3px; } }
