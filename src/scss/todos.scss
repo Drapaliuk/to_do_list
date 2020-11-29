@@ -7,6 +7,11 @@
     background-repeat: no-repeat;
     position: relative;
     overflow: auto;
+    &.dark-theme {
+        background-color: #121212;
+        color: rgb(209, 195, 195);
+        background-image: none;
+    }
     @media (max-width: 767px) {
         // display: none;
         padding-top: 80px;
@@ -14,8 +19,10 @@
     }
 }
 
-.completed-todo,
-.uncompleted-todo {
+
+.todo-completed,
+.todo-uncompleted__inner-wrapper,
+.todo-completed__inner-wrapper {
     display: flex;
     height: 36px;
     padding: 7px 15px;
@@ -24,30 +31,34 @@
     border-radius: 4px;
     position: relative;
     cursor: pointer;
-    background-color: #fff;
     margin-bottom: 5px;
-
 
     @media (max-width: 767px) {
         height: 41px;
     }
-
-    
 }
 
 
-.uncompleted-todo-item {
+
+
+.todo-uncompleted {
     margin-bottom: 5px;
     background-color: #fff;
     border-radius: 4px;
+    &.dark-theme {
+        background-color: #303030;
+        box-shadow: 0 0 2px #fff;
+    }
 }
 
 
-
-
-.completed-todo {
+.todo-completed {
     opacity: .5;
     text-decoration: line-through;
+    &.dark-theme {
+        background-color: #272626;
+    }
+    
     @media (max-width: 767px) {
         opacity: .65;
 
@@ -56,15 +67,15 @@
 
 
 .completed-todo__check,
-.uncompleted-todo__check {
+.todo-completed__check,
+.todo-uncompleted__check {
     width: 18px;
     height: 18px;
     margin-right: 10px;
-
 }
 
 
-
+.todo-uncompleted__pin-btn,
 .importantly-button,
 .pin-button {
     background-color: transparent;
@@ -78,6 +89,46 @@
     }
     
 }
+
+.todo__icon-star,
+.todo__icon-pin {
+    width: 21px;
+    height: 21px;
+}
+
+.todo__icon-star--inactive {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 1px;
+}
+.todo__icon-star--active {
+    fill: #ffc107;
+}
+
+.todo__icon-pin--active {
+    fill: #e4002b;
+}
+
+.todo-uncompleted.dark-theme .todo__icon-star--inactive,
+.todo-uncompleted.dark-theme .todo__icon-pin--inactive  {
+    stroke: rgb(209, 195, 195);
+    stroke-width: 2px;
+    fill: transparent;
+}
+
+
+
+
+
+.icon__pin--active {
+
+}
+
+.icon__pin--inactive {
+    stroke: #000;
+    fill: none;
+}
+
 
 .pin-button {
     right: 33px;
@@ -94,9 +145,8 @@
 }
 
 
-
-
 // EVENTS STYLES
 .uncompleted-todo__text.open-task {
-    color: hsla(0, 0%, 0%, .5)
+    color: hsla(0, 0%, 0%, .5);
+    background-color: transparent;
 }

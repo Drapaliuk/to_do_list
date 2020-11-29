@@ -474,7 +474,7 @@
             <!--! EDIT MOBILE                         -->
             <!-- !BAR -->
 
-            <div class="todos">
+            <div class="todos dark-theme">
                 <!--! MOBILE HEADER -->
                 <!-- <header>
                     <button class="back-page-btn">
@@ -491,12 +491,17 @@
                 </header> -->
                 <!--! MOBILE HEADER -->
 
-                <div class="add-todo-wrapper">
+                <!-- <div class="add-todo-wrapper"> -->
                     <input class="add-todo" type="text" placeholder="+ Add todo">
-                </div>
+                <!-- </div> -->
                 <!--! SETTINGS SETTINGS -->
 
                 <div class="settings">
+                    <button class="settings__close-btn">
+                        <svg class="icon--medium-size">
+                            <use href="./src/img/sprite.svg#icon-cancel"></use>
+                        </svg>
+                    </button>
                     <h2 class="settings__header">Settings</h2>
                     <ul class="settings__parts">
                         <li class="settings__part">
@@ -686,30 +691,24 @@
                 <!-- TODOS! -->
                 <!-- TODOS UNCOMPLETED! -->
                 <ul class="uncompleted-todo-list">
-                    <li class="uncompleted-todo-item">
-                        <div class="uncompleted-todo">
+                    <!-- <li class="todo-uncompleted dark-theme">
+                        <div class="todo-uncompleted__inner-wrapper">
                             <input class="uncompleted-todo__check" type="checkbox">
                             <div class="uncompleted-todo__text">Todo text</div>
                             <button class="pin-button">
-                                <svg class="icon icon__todo-icon icon__pin--active">
+                                <svg class="todo__icon-pin todo__icon-pin--active">
                                     <use href="./src/img/sprite.svg#icon-paper-push-pin"></use>
                                 </svg>
                             </button>
 
                             <button class="importantly-button">
-                                <svg class="icon icon__todo-icon icon__star--active">
+                                <svg class="todo__icon-star todo__icon-star--inactive">
                                     <use href="./src/img/sprite.svg#icon-star"></use>
                                 </svg>
                             </button>
-                        </div>
+                        </div> -->
 
-
-
-
-
-
-
-                        <div class="todo-full-info-mobile">
+                        <!-- <div class="todo-full-info-mobile">
                             <div class="todo-full-info-wrapper">
                                 <div class="full-text">
                                     <input type="checkbox" class="full-info-check-todo">
@@ -784,11 +783,6 @@
                                         </li>
                                     </ul>
                                 </div>
-
-
-
-
-
                                 <div class="todo-manipulations-wrapper">
                                     <form class="add-comment-form">
                                         <input class="add-comment" type="text" placeholder="Add comment...">
@@ -807,23 +801,22 @@
                                             </svg>
                                         </button>
                                     </div>
-
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="uncompleted-todo-item">
-                        <div class="uncompleted-todo">
-                            <input class="uncompleted-todo__check" type="checkbox">
-                            <div class="uncompleted-todo__text">Todo text</div>
+                        </div> -->
+                    <!-- </li> -->
+
+                    <li class="todo-uncompleted dark-theme dark-theme">
+                        <div class="todo-uncompleted__inner-wrapper">
+                            <input class="todo-uncompleted__check" type="checkbox">
+                            <div class="todo-uncompleted__text">Todo text</div>
                             <button class="pin-button">
-                                <svg class="icon icon__todo-icon icon__pin--inactive">
+                                <svg class="todo__icon-pin todo__icon-pin--inactive">
                                     <use href="./src/img/sprite.svg#icon-paper-push-pin"></use>
                                 </svg>
                             </button>
-
                             <button class="importantly-button">
-                                <svg class="icon icon__todo-icon icon__star--inactive">
+                                <svg class="todo__icon-star todo__icon-star--active">
                                     <use href="./src/img/sprite.svg#icon-star"></use>
                                 </svg>
                             </button>
@@ -842,11 +835,11 @@
                     </svg> -->
                 </div>
                 <ul class="completed-todo-list">
-                    <li class="completed-todo">
+                    <li class="todo-completed dark-theme">
                         <input class="completed-todo__check" type="checkbox">
                         <div class="completed-todo__text">Todo text</div>
                     </li>
-                    <li class="completed-todo">
+                    <li class="todo-completed dark-theme">
                         <input class="completed-todo__check" type="checkbox">
                         <div class="completed-todo__text">Todo text</div>
                     </li>
@@ -858,70 +851,70 @@
 
 
                 <!-- TODOS SETTINGS -->
-                <div class="todos-settings">
-                    <ul class="options-list-popup">
-                        <li class="todos-option">
-                            <button class="todos-option-btn">
-                                <svg class="icon icon--todo-settings icon--mute-active">
+                <div class="todos-settings dark-theme">
+                    <ul class="options">
+                        <li class="option">
+                            <button class="option__btn">
+                                <svg class="todos-settings__icon todos-settings__icon--active">
                                     <use href="./src/img/sprite.svg#icon-mute"></use>
                                 </svg>
                                 <span class="todos-option-text">Don`t disturbe <span
-                                        class="disturb-status">Off</span></span>
+                                        class="disturb-status disturb-status--active">on</span></span>
                             </button>
                         </li>
                         <li class="todos-option">
-                            <button class="todos-option-btn">
-                                <svg class="icon icon--todo-settings">
+                            <button class="option__btn">
+                                <svg class="todos-settings__icon">
                                     <use href="./src/img/sprite.svg#icon-image"></use>
                                 </svg>
                                 <span class="todos-option-text">Theme of list</span>
                             </button>
                         </li>
                         <li class="todos-option">
-                            <button class="todos-option-btn">
-                                <svg class="icon icon--todo-settings">
+                            <button class="option__btn">
+                                <svg class="todos-settings__icon">
                                     <use href="./src/img/sprite.svg#icon-descendant"></use>
                                 </svg>
                                 <span class="todos-option-text">Sort Alphabetically</span>
                             </button>
                         </li>
                         <li class="todos-option">
-                            <button class="todos-option-btn">
-                                <svg class="icon icon--todo-settings">
+                            <button class="option__btn">
+                                <svg class="todos-settings__icon">
                                     <use href="./src/img/sprite.svg#icon-calendara_bw"></use>
                                 </svg>
                                 <span class="todos-option-text">Sort by Due Date</span>
                             </button>
                         </li>
                         <li class="todos-option">
-                            <button class="todos-option-btn">
-                                <svg class="icon icon--todo-settings">
+                            <button class="option__btn">
+                                <svg class="todos-settings__icon">
                                     <use href="./src/img/sprite.svg#icon-wall-clock"></use>
                                 </svg>
                                 <span class="todos-option-text">Sort bt Creation Date</span>
                             </button>
                         </li>
                         <li class="todos-option">
-                            <button class="todos-option-btn">
-                                <svg class="icon icon__star--inactive">
+                            <button class="option__btn">
+                                <svg class="todos-settings__icon todos-settings__icon--active">
                                     <use href="./src/img/sprite.svg#icon-star"></use>
                                 </svg>
                                 <span class="todos-option-text">Sort by Priority</span>
                             </button>
                         </li>
                     </ul>
-                    <div class="todos-settings-btn-wrapper">
-                        <button class="todos-settings-sort-btn">
-                            <svg class="icon todos-settings-btn-icon">
+                    <div class="todos-settings__btn-wrapper">
+                        <button class="todos-settings__parts-btn">
+                            <svg class="todos-settings__parts-icon ">
                                 <use href="./src/img/sprite.svg#icon-descendant"></use>
                             </svg>
-                            <span class="todo-settings-btn-text">sort</span>
+                            sort
                         </button>
-                        <button class="todos-settings-more-btn todo-settings-btn-text--active">
-                            <svg class="icon todos-settings-btn-icon icon--todo-settings-active">
+                        <button class="todos-settings__parts-btn todos-settings__parts-btn--active">
+                            <svg class="todos-settings__parts-icon">
                                 <use href="./src/img/sprite.svg#icon-more"></use>
                             </svg>
-                            <span class="todo-settings-btn-text">more</span>
+                            more
                         </button>
                     </div>
                 </div>

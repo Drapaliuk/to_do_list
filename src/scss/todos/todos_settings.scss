@@ -4,13 +4,14 @@
     bottom: 40px;
     left: 45%;
     transform: translateX(-45%);
+
     @media (max-width: 767px) {
         bottom: 3vh;
         position: fixed;
     }
 }
 
-.todos-settings-btn-wrapper {
+.todos-settings__btn-wrapper {
     padding: 8px 0;
     width: 240px;
     border-bottom-left-radius: 5px;
@@ -19,55 +20,52 @@
     justify-content: center;
     background-color: hsla(0, 100%, 100%, .75);
     transition: all .3s linear;
+    &:hover {
+        background-color: hsla(0, 100%, 100%, 1);
+    }
     @media (max-width: 767px) {
         padding: 4px 0;
         background-color: hsla(0, 100%, 100%, .5);
 
     }
-    
 }
 
-.todos-settings-btn-wrapper:hover {
-    background-color: hsla(0, 100%, 100%, 1);
+.todos-settings.dark-theme .todos-settings__btn-wrapper {
+    background-color: hsla(0, 0%, 19%, .75);
+    &:hover {
+    background-color: hsla(0, 0%, 19%, 1);
 
+    }
 }
 
-.todos-settings-sort-btn,
-.todos-settings-more-btn {
+
+.todos-settings__parts-btn {
     outline: none;
     border: none;
     background-color: transparent;
     cursor: pointer;
     text-align: center;
-}
-
-.todos-settings-sort-btn svg,
-.todos-settings-more-btn svg{
-    margin: auto;
-    margin-bottom: 5px;
-}
-
-
-
-.todos-settings-sort-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-right: 15px;
+    margin-left: 15px;
+
+    &--active {
+        color: #2b96f1;
+        fill: #2b96f1;
+    }
 }
 
-.todos-settings-btn-icon {
-    display: block;
-    margin: auto;
+
+.todos-settings__parts-icon {
+    width: 24px;
+    height: 24px;
     margin-bottom: 5px;
 }
 
-.todo-settings-btn-text {
-    text-align: center;
-}
 
-.todo-settings-btn-text--active {
-    color: #2b96f1;
-}
-
-.options-list-popup {
+.options {
     width: 240px;
     margin: 0;
     margin-bottom: 1px;
@@ -79,20 +77,9 @@
     }
 }
 
-.todos-option {
 
-}
 
-.todos-option-icon {
-    margin-right: 15px;
-
-}
-
-.todos-option-text {
-
-}
-
-.todos-option-btn {
+.option__btn {
     background-color: hsla(0, 100%, 100%, .75);
     width: 100%;
     padding: 8px 0;
@@ -103,17 +90,49 @@
     align-items: center;
     border: none;
     transition: all .3s linear;
+
+    &:hover {
+        background-color: hsla(0, 100%, 100%, 1);
+    }
+
     @media (max-width: 767px) {
         background-color: hsla(0, 100%, 100%, .95);
         display: none;
     }
 }
 
-.todos-option-btn:hover {
-    background-color: hsla(0, 100%, 100%, 1);
+
+.todos-settings.dark-theme .option__btn {
+    background-color: #303030;
+    color: rgb(209, 195, 195);
+    &:hover {
+        background-color: #808080;
+    }
+
 }
+
+.todos-settings__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    &--active {
+        fill: #2b96f1;
+    }
+}
+
+.todos-settings.dark-theme .todos-settings__icon {
+    fill: rgb(177, 139, 139);
+    &--active {
+        fill: #2b96f1;
+    }
+}
+
 
 .disturb-status {
     margin-left: 30px;
+    &--active {
+        color: #2b96f1;
+    }
+
 }
 

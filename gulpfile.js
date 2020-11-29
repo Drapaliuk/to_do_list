@@ -37,7 +37,7 @@ const optimImg = function (done) {
 const css = function (done) {
     gulp.src('./src/scss/**/*.scss')
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'uncompressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer({
             browsersList: ['last 10 versions'],

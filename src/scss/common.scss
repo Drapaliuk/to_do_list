@@ -19,6 +19,11 @@ body {
     margin: 0;
 }
 
+body button {
+    cursor: pointer;
+    outline: none;
+}
+
 
 body img {
     display: block;
