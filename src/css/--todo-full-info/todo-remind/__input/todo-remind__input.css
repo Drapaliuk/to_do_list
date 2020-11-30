@@ -1,0 +1,19 @@
+.todo-remind__input {
+  color: red;
+  border: none;
+  outline: none; }
+
+.todo-remind__input::-webkit-input-placeholder {
+  color: gray; }
+
+.todo-remind__input::-moz-placeholder {
+  color: gray; }
+
+.todo-remind__input:-ms-input-placeholder {
+  color: gray; }
+
+.todo-remind__input::-ms-input-placeholder {
+  color: gray; }
+
+.todo-remind__input::placeholder {
+  color: gray; }

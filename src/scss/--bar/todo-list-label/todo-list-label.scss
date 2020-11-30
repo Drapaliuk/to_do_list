@@ -1,0 +1,124 @@
+.todo-list-label {
+    cursor: pointer;
+    transition: all .3s linear;
+    position: relative;
+    margin-bottom: 0; 
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    // height: 38px;
+
+    @media (max-width: 767px) {
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .app-bookmarks,
+// .todo-lists {
+//     margin: 0;
+// }
+
+// .app-bookmark {
+//     // padding: 6px 33px 6px 10px;
+// }
+
+// .todo-list {
+//     // padding: 6px 33px 6px 10px;
+// }
+
+// .app-bookmark:hover,
+// .todo-list:hover {
+//     // background-color:hsla(208, 88%, 56%, .65);
+// }
+
+// .app-bookmark__name {
+//     outline: none;
+//     background: transparent;
+//     border: none;
+// }
+
+// .app-bookmark__amount {
+//     margin-left: auto;
+// }
+
+// .todo-list__amount {
+//     margin-right: 4px;
+//     @media (max-width: 767px) {
+//         margin-right: 0;
+//     }
+// }
+
+// .todo-list__icon,
+// .app-bookmark__icon {
+//     margin-right: 10px;
+// }
+
+
+// .app-bookmark__amount-todo,
+// .todo-list__correct-block {
+//     position: absolute;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     top: 0;
+//     right: 0;
+//     display: flex;
+//     transition: all .3s linear;
+//     @media (max-width: 767px) {
+//         padding-right: 20px;
+//     }
+// }
+
+// .app-bookmark__amount-todo {
+//     padding-right: 10px;
+// }
+
+
+// .todo-list__correct {
+//     display: inline-block;
+//     height: 100%;
+//     outline: none;
+//     border: none;
+//     background-color: transparent;
+//     cursor: pointer;
+//     transition: all .3s linear;
+  
+//     @media (max-width: 767px) {
+//         display: none;
+//     }
+// }
+
+// .todo-list__correct img {
+//     width: 18px;
+//     height: 18px;
+// }
+
+
+// .todo-list__correct:hover {
+//     background-color: #0077c8;
+// }
+
+// // .todo-list__delete:hover {
+// //     background-color: #e4002b;
+// // }

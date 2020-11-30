@@ -1,0 +1,6 @@
+.bar-section__labels-list-item {
+  padding: 6px 0 6px 10px;
+  position: relative;
+  cursor: pointer; }
+  .bar-section__labels-list-item:hover {
+    background-color: rgba(44, 149, 242, 0.65); }

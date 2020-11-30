@@ -1,0 +1,21 @@
+.todo-list-settings__panel {
+    padding: 8px 0;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 100%, 100%, .75);
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover {
+        background-color: hsla(0, 100%, 100%, 1);
+    }
+    @media (max-width: 767px) {
+        padding: 4px 0;
+        background-color: hsla(0, 100%, 100%, .5);
+
+    }
+}
+
+// .todo-list-settings.todo-list-settings_theme_dark.todo-list-settings__panel:hover {
+//     background-color: #808080;
+// }

@@ -1,0 +1,12 @@
+.bar-section {
+  background-color: #fff;
+  font-family: sans-serif;
+  position: relative;
+  color: #5e5b5b;
+  font-weight: 600;
+  overflow: auto;
+  position: relative; }
+  @media (max-width: 767px) {
+    .bar-section {
+      padding-top: 80px;
+      padding-bottom: 120px; } }

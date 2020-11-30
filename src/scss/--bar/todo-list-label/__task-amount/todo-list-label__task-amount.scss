@@ -1,0 +1,13 @@
+.todo-list-label__task-amount {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 10px;
+    display: flex;
+    transition: all .3s linear;
+    @media (max-width: 767px) {
+        padding-right: 20px;
+    }
+}

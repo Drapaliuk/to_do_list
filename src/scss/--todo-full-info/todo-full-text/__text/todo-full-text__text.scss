@@ -1,0 +1,11 @@
+.todo-full-text__text {
+    border:none;
+    display: block;
+    width: 100%;
+    resize: vertical;
+    resize: none;
+    min-height: 30px;
+    max-height: 100px;
+    outline: none;
+    padding: 5px;
+}

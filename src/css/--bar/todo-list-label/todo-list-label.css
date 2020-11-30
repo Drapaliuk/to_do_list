@@ -1,0 +1,13 @@
+.todo-list-label {
+  cursor: pointer;
+  transition: all .3s linear;
+  position: relative;
+  margin-bottom: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .todo-list-label {
+      height: 50px; } }

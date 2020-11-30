@@ -1,0 +1,8 @@
+.bar-section__labels-list-item {
+    padding: 6px 0 6px 10px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        background-color:hsla(208, 88%, 56%, .65);
+    }
+}

@@ -1,0 +1,5 @@
+.todo-list-label.todo-list-label_with_correct_btn:hover > .todo-list-label__correct-btn {
+  transform: none; }
+
+.todo-list-label.todo-list-label_with_correct_btn:hover > .todo-list-label__task-amount {
+  right: 40px; }

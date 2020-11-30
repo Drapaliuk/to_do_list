@@ -1,0 +1,6 @@
+.todo-full-text__check-input-todo {
+    margin-right: 10px;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

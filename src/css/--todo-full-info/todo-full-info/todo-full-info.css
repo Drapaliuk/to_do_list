@@ -1,0 +1,10 @@
+.todo-full-info {
+  padding: 0;
+  position: relative;
+  background-color: #dcdee4;
+  padding-bottom: 90px;
+  overflow: auto; }
+  @media (max-width: 767px) {
+    .todo-full-info {
+      padding-bottom: 0;
+      position: static; } }

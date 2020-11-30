@@ -1,0 +1,10 @@
+.todo-remind__input {
+    color: red;
+    border: none;
+    outline: none;
+}
+
+
+.todo-remind__input::placeholder {
+    color: gray;
+}

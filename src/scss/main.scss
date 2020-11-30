@@ -1,11 +1,5 @@
 @import './common.scss';
-@import './bar/bar.scss';
-@import './todos.scss';
-@import './bar/folder.scss';
-@import './bar/todolists.scss';
 @import './header.scss';
-@import './todos/add_todo.scss';
-@import './todos/visibility_completed_todo.scss';
 @import './todo_full_info/comments.scss';
 @import './todo_full_info/full_text.scss';
 @import './todo_full_info/todo-manipulations.scss';
@@ -13,10 +7,7 @@
 @import './todo_full_info/todo_full_info.scss';
 @import './todo_full_info/subtasks.scss';
 @import './todo_full_info/note.scss';
-@import './bar/edit_list.scss';
-@import './todos/todos_settings.scss';
 @import './settings/settings.scss';
-@import './bar/todolist-edit-mobile.scss';
 @import './bar/notification.scss';
 @import './icons.scss';
 @import './auth/auth.scss';
@@ -26,56 +17,28 @@
 
 
 
+@import './--bar/bar-section/bar-section.scss';
+@import './--bar/bar-section/_theme_dark/bar-section_theme_dark.scss';
+@import './--bar/bar-section/__labels-list/bar-section__labels-list.scss';
+@import './--bar/bar-section/__labels-list-item/bar-section__label-list-item.scss';
+@import './--bar/bar-section/__add-new-folder-btn/bar-section__add-new-folder-btn.scss';
+@import './--bar/bar-section/__edit-todo-list-menu/bar-section__edit-todo-list-menu.scss';
+@import './--bar/bar-section/__edit-todo-list-menu-item/bar-section__edit-todo-list-menu-item.scss';
 
 
+@import './--bar/todo-list-label/todo-list-label.scss';
+@import './--bar/todo-list-label/__correct-btn/todo-list-label__correct-btn.scss';
+@import './--bar/todo-list-label/__icon/todo-list-label__icon.scss';
+@import './--bar/todo-list-label/__name/todo-list-label__name.scss';
+@import './--bar/todo-list-label/__task-amount/todo-list-label__task-amount.scss';
+@import './--bar/todo-list-label/_with_correct_btn/todo-lists-label_with_correct_btn.scss';
 
-@import './add-todo/add-todo.scss';
-@import './add-todo/_theme_dark/add-todo_theme_dark.scss';
-
-@import './todo-list/todo-list/todo-list.scss';
-@import './todo-list/__item/todo-list__item.scss';
-@import './todo/todo/todo.scss';
-@import './todo/__check-input/todo__check-input.scss';
-@import './todo/__text/todo__text.scss';
-@import './todo/_theme_dark/todo_theme_dark.scss';
-@import './todo/_completed/todo_completed.scss';
-@import './todo/_completed/theme-dark/todo_completed_theme_dark.scss';
-
-@import './pin-btn/__icon/pin-btn__icon.scss';
-@import './pin-btn/_todo_completed/pin-btn_todo_completed.scss';
-@import './pin-btn/pin-btn/pin-btn.scss';
-@import './pin-btn/_todo/pin-btn_todo.scss';
-@import './pin-btn/_theme_dark/pin-btn_theme_dark.scss';
-@import './pin-btn/_active/pin-btn_active.scss';
-
-@import './importantly-btn/__icon/importantly-btn__icon.scss';
-@import './importantly-btn/_todo_completed/importantly-btn_todo_completed.scss';
-@import './importantly-btn/importantly-btn/importantly-btn.scss';
-@import './importantly-btn/_todo/importantly-btn_todo.scss';
-@import './importantly-btn/_theme_dark/importantly-btn_theme_dark.scss';
-@import './importantly-btn/_active/importantly-btn_active.scss';
-
-@import './todo-list-settings/todo-list-settings.scss';
-@import './todo-list-settings/__item/todo-list-settings__icon.scss';
-@import './todo-list-settings/__item/todo-list-settings__item.scss';
-@import './todo-list-settings/__panel/todo-list-settings__panel.scss';
-@import './todo-list-settings/__part-btn/todo-list-settings__part-btn.scss';
-@import './todo-list-settings/__part-btn/_active/todo-list-settings__part-btn_active.scss';
+@import './--bar/todo-lists-folder/todo-lists-folder.scss';
+@import './--bar/todo-lists-folder/__create-new/todo-lists-folder__create-new.scss';
+@import './--bar/todo-lists-folder/__inner-list/todo-lists-folder__inner-list.scss';
 
 
-
-
-@import './todo-list-settings-option/todo-list-settings-option.scss';
-@import './todo-list-settings-option/__text/todo-list-settings-option__text.scss';
-@import './todo-list-settings-option/__icon/todo-list-settings-option__icon.scss';
-@import './todo-list-settings-option/_theme_dark/todo-list-settings-option_theme_dark.scss';
-@import './todo-list-settings-option/_active/todo-list-settings-option_active.scss';
-@import './todo-list-settings-option/__disturb-status/todo-list-settings-option__disturb-status.scss';
-@import './todo-list-settings-option/__disturb-status/_on/todo-list-settings-option__disturb-status_on.scss';
-
-
-
-
+// @import '';
 // @import '';
 // @import '';
 // @import '';
@@ -89,6 +52,104 @@
 
 
 
+
+
+
+
+
+@import './--todo-list/todo-section/todo-section.scss';
+@import './--todo-list/todo-section/_theme_dark/todo-section_theme_dark.scss';
+
+@import './--todo-list/add-todo/add-todo.scss';
+@import './--todo-list/add-todo/_theme_dark/add-todo_theme_dark.scss';
+@import './--todo-list/todo-list/todo-list/todo-list.scss';
+@import './--todo-list/todo-list/__item/todo-list__item.scss';
+@import './--todo-list/todo/todo/todo.scss';
+@import './--todo-list/todo/__check-input/todo__check-input.scss';
+@import './--todo-list/todo/__text/todo__text.scss';
+@import './--todo-list/todo/_theme_dark/todo_theme_dark.scss';
+@import './--todo-list/todo/_completed/todo_completed.scss';
+@import './--todo-list/todo/_completed/theme-dark/todo_completed_theme_dark.scss';
+@import './--todo-list/pin-btn/__icon/pin-btn__icon.scss';
+@import './--todo-list/pin-btn/_todo_completed/pin-btn_todo_completed.scss';
+@import './--todo-list/pin-btn/pin-btn/pin-btn.scss';
+@import './--todo-list/pin-btn/_todo/pin-btn_todo.scss';
+@import './--todo-list/pin-btn/_theme_dark/pin-btn_theme_dark.scss';
+@import './--todo-list/pin-btn/_active/pin-btn_active.scss';
+@import './--todo-list/importantly-btn/__icon/importantly-btn__icon.scss';
+@import './--todo-list/importantly-btn/_todo_completed/importantly-btn_todo_completed.scss';
+@import './--todo-list/importantly-btn/importantly-btn/importantly-btn.scss';
+@import './--todo-list/importantly-btn/_todo/importantly-btn_todo.scss';
+@import './--todo-list/importantly-btn/_theme_dark/importantly-btn_theme_dark.scss';
+@import './--todo-list/importantly-btn/_active/importantly-btn_active.scss';
+@import './--todo-list/todo-list-settings/todo-list-settings.scss';
+@import './--todo-list/todo-list-settings/__icon/todo-list-settings__icon.scss';
+@import './--todo-list/todo-list-settings/__item/todo-list-settings__item.scss';
+@import './--todo-list/todo-list-settings/__panel/todo-list-settings__panel.scss';
+@import './--todo-list/todo-list-settings/__part-btn/todo-list-settings__part-btn.scss';
+@import './--todo-list/todo-list-settings/__part-btn/_active/todo-list-settings__part-btn_active.scss';
+@import './--todo-list/todo-list-settings/_theme_dark/todo-list-settings_theme_dark.scss';
+@import './--todo-list/visible-completed-todo/visible-completed-todo.scss';
+@import './--todo-list/visible-completed-todo/__btn/visible-completed-todo__btn.scss';
+@import './--todo-list/visible-completed-todo/__icon/visible-completed-todo__icon.scss';
+@import './--todo-list/visible-completed-todo/_theme_dark/visible-completed-todo_theme_dark.scss';
+@import './--todo-list/todo-list-settings-option/todo-list-settings-option.scss';
+@import './--todo-list/todo-list-settings-option/__text/todo-list-settings-option__text.scss';
+@import './--todo-list/todo-list-settings-option/__icon/todo-list-settings-option__icon.scss';
+@import './--todo-list/todo-list-settings-option/_theme_dark/todo-list-settings-option_theme_dark.scss';
+@import './--todo-list/todo-list-settings-option/_active/todo-list-settings-option_active.scss';
+@import './--todo-list/todo-list-settings-option/__disturb-status/todo-list-settings-option__disturb-status.scss';
+@import './--todo-list/todo-list-settings-option/__disturb-status/_on/todo-list-settings-option__disturb-status_on.scss';
+@import './--todo-list/todo-list-settings/__panel/_theme_dark/todo-list-settings__panel_theme_dark.scss';
+
+
+
+
+@import './--todo-full-info/todo-additional-option/todo-additional-option.scss';
+@import './--todo-full-info/todo-additional-option/__time-options/todo-additional-option__time-options.scss';
+@import './--todo-full-info/todo-additional-option/__time-options-item/todo-additional-options__time-options-item.scss';
+@import './--todo-full-info/todo-comment/__delete-btn/todo-comment__delete-btn.scss';
+@import './--todo-full-info/todo-comment/__text/todo-comment__text.scss';
+@import './--todo-full-info/todo-comment/todo-comment.scss';
+@import './--todo-full-info/todo-comments-list/__item/todo-comments-list__item.scss';
+@import './--todo-full-info/todo-comments-list/todo-comments-list.scss';
+@import './--todo-full-info/todo-due-date/__clear-btn/todo-due-date__clear-btn.scss';
+@import './--todo-full-info/todo-due-date/__icon/todo-due-date__icon.scss';
+@import './--todo-full-info/todo-due-date/__input/todo-due-date__input.scss';
+@import './--todo-full-info/todo-due-date/__clear-btn-icon/todo-due-date__clear-btn-icon.scss';
+
+@import './--todo-full-info/todo-due-date/todo-due-date.scss';
+@import './--todo-full-info/todo-full-info/__author/todo-full-info__author.scss';
+@import './--todo-full-info/todo-full-info/__close-btn/todo-full-info__close-btn.scss';
+@import './--todo-full-info/todo-full-info/__delete-todo/todo-full-info__delete-todo.scss';
+@import './--todo-full-info/todo-full-info/__manipulation-wrapper/todo-full-info__manipulation-wrapper.scss';
+@import './--todo-full-info/todo-full-info/todo-full-info.scss';
+@import './--todo-full-info/todo-full-text/__check-input-todo/todo-full-text__check-input-todo.scss';
+@import './--todo-full-info/todo-full-text/__icon/todo-full-text__icon.scss';
+@import './--todo-full-info/todo-full-text/__text/todo-full-text__text.scss';
+@import './--todo-full-info/todo-full-text/todo-full-text.scss';
+@import './--todo-full-info/todo-full-text/__importantly-btn/todo-full-text__importantly-btn.scss';
+
+
+
+@import './--todo-full-info/todo-note/__text-area/todo-note__text-area.scss';
+@import './--todo-full-info/todo-note/todo-note.scss';
+@import './--todo-full-info/todo-remind/__clear-btn/todo-remind__clear-btn.scss';
+@import './--todo-full-info/todo-remind/__icon/todo-remind__icon.scss';
+@import './--todo-full-info/todo-remind/__input/todo-remind__input.scss';
+@import './--todo-full-info/todo-remind/__clear-btn-icon/todo-remind__clear-btn-icon.scss';
+
+@import './--todo-full-info/todo-remind/todo-remind.scss';
+@import './--todo-full-info/todo-subtask/__check-input-subtask/todo-subtask__check-input-subtask.scss';
+@import './--todo-full-info/todo-subtask/__delete-btn/todo-subtask__delete-btn.scss';
+@import './--todo-full-info/todo-subtask/__text/todo-subtask__text.scss';
+@import './--todo-full-info/todo-subtask/todo-subtask.scss';
+@import './--todo-full-info/todo-subtasks/__form-btn/todo-subtasks__form-btn.scss';
+@import './--todo-full-info/todo-subtasks/__form-input/todo-subtasks__form-input.scss';
+@import './--todo-full-info/todo-subtasks/__form/todo-subtasks__form.scss';
+@import './--todo-full-info/todo-subtasks/__list-item/todo-subtasks__list-item.scss';
+@import './--todo-full-info/todo-subtasks/__list/todo-subtasks__list.scss';
+@import './--todo-full-info/todo-subtasks/todo-subtasks.scss';
 
 
 
