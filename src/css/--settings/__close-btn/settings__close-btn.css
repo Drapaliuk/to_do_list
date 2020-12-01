@@ -1,0 +1,7 @@
+.settings__close-btn {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent; }

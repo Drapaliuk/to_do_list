@@ -1,0 +1,4 @@
+.todo-full-info__manipulations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }

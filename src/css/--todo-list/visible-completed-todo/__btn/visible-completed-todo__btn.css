@@ -1,0 +1,16 @@
+.visible-completed-todo__btn {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 2px 10px;
+  background-color: #999292;
+  color: #fff;
+  font-weight: 300;
+  font-size: 13px;
+  cursor: pointer; }
+  @media (max-width: 767px) {
+    .visible-completed-todo__btn {
+      opacity: .75;
+      width: 80%;
+      padding: 10px 4px; } }

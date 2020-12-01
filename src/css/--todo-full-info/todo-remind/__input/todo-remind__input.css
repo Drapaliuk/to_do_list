@@ -1,7 +1,8 @@
 .todo-remind__input {
   color: red;
   border: none;
-  outline: none; }
+  outline: none;
+  background-color: transparent; }
 
 .todo-remind__input::-webkit-input-placeholder {
   color: gray; }

@@ -32,27 +32,3 @@
 
 .creted-by {
   color: gray; }
-
-.add-comment-form {
-  display: grid;
-  grid-template-columns: 10fr 1fr;
-  grid-column-gap: 5px; }
-
-.add-comment-form input {
-  border: 1px solid gray;
-  padding: 6px 15px;
-  border-radius: 3px;
-  outline: none; }
-
-.add-comment-form button {
-  border: 1px solid gray;
-  border-radius: 3px;
-  background-color: transparent;
-  padding: 0 16px;
-  cursor: pointer;
-  color: gray;
-  transition: all .3s linear;
-  outline: none; }
-
-.add-comment-form button:hover {
-  box-shadow: inset 0px 0px 5px #cfcbcb; }

@@ -1,0 +1,18 @@
+.settings {
+    background-color: hsla(180, 8%, 83%, 0.9);
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 18px 10px;
+    z-index: 999999;
+    // display: none;
+    overflow: auto;
+    @media (max-width: 767px) {
+        // display: none;
+        position: static;
+        transform: none;
+    }
+}

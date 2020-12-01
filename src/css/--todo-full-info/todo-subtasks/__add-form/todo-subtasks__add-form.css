@@ -1,0 +1,6 @@
+.todo-subtasks__add-form {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 3px;
+  margin-bottom: 15px; }

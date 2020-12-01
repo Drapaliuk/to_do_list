@@ -1,0 +1,14 @@
+.add-comment-form__btn {
+    border: 1px solid gray;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 0 16px;
+    cursor: pointer;
+    color: gray;
+    transition: all .3s linear;
+    outline: none;
+}
+
+.add-comment-form__btn:hover {
+    box-shadow: inset 0px 0px 5px rgb(207, 203, 203);
+}

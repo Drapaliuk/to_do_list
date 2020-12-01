@@ -1,0 +1,5 @@
+.todo-comments-list {
+  max-height: 30%;
+  overflow: auto;
+  padding: 13px 0;
+  margin-bottom: 10px; }

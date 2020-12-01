@@ -1,0 +1,51 @@
+.todo-full-info.todo-full-info_theme_dark {
+  background-color: #121212;
+  color: #d1c3c3;
+  border-left: 1px solid #524f4f; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-text {
+  background-color: #121212;
+  color: #d1c3c3;
+  box-shadow: 0 0 1px #524f4f; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-text__text::-webkit-input-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-input::-webkit-input-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-remind__input::-webkit-input-placeholder {
+  color: #d1c3c3; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-text__text::-moz-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-input::-moz-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-remind__input::-moz-placeholder {
+  color: #d1c3c3; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-text__text:-ms-input-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-input:-ms-input-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-remind__input:-ms-input-placeholder {
+  color: #d1c3c3; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-text__text::-ms-input-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-input::-ms-input-placeholder, .todo-full-info.todo-full-info_theme_dark .todo-remind__input::-ms-input-placeholder {
+  color: #d1c3c3; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-text__text,
+.todo-full-info.todo-full-info_theme_dark .todo-full-text__text::placeholder,
+.todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-input::placeholder,
+.todo-full-info.todo-full-info_theme_dark .todo-remind__input::placeholder {
+  color: #d1c3c3; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-additional-option__time-options {
+  background-color: #303030;
+  fill: #d1c3c3;
+  box-shadow: none; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-note {
+  box-shadow: none; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-full-info__manipulation-wrapper {
+  fill: #d1c3c3;
+  background-color: #121212; }
+
+.todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-input,
+.todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form-btn,
+.todo-full-info.todo-full-info_theme_dark .todo-subtask,
+.todo-full-info.todo-full-info_theme_dark .todo-comment,
+.todo-full-info.todo-full-info_theme_dark .todo-subtasks__add-form,
+.todo-full-info.todo-full-info_theme_dark .add-comment-form__input,
+.todo-full-info.todo-full-info_theme_dark .add-comment-form__btn {
+  background-color: #303030;
+  box-shadow: none;
+  fill: #d1c3c3;
+  color: #d1c3c3; }
