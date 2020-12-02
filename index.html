@@ -357,7 +357,7 @@
 
 
 
-                            
+
 
                             <!--! EDIT MOBILE -->
                             <ul class="bar-section__edit-todo-list-menu">
@@ -437,173 +437,164 @@
                     <input class="add-todo add-todo_theme_dark" type="text" placeholder="+ Add todo">
                     <!--! SETTINGS SETTINGS -->
 
-                    <div class="settings">
+                    <div class="settings settings_theme_dark">
                         <button class="settings__close-btn">
-                            <svg class="icon--medium-size">
+                            <svg class="settings__icon">
                                 <use href="./src/img/sprite.svg#icon-cancel"></use>
                             </svg>
                         </button>
                         <h2 class="settings__header">Settings</h2>
                         <ul class="settings__parts-list">
-                            <li class="settings__parts-list-item">
-                                <button class="settings__open-part-btn">
+                            <li class="settings__part">
+                                <button class="settings__part-btn">
                                     <span class="settings__part-name-wrapper">
-                                        <svg class="icon">
+                                        <svg class="settings__icon_part_name">
                                             <use href="./src/img/sprite.svg#icon-user"></use>
                                         </svg>
                                         <span class="settings__part-name">Profile</span>
                                     </span>
-                                    <svg class="icon">
+                                    <svg class="settings__icon_open-status">
                                         <use href="./src/img/sprite.svg#icon-down-arrow"></use>
                                         <use href="./src/img/sprite.svg#icon-up-arrow"></use>
                                     </svg>
                                 </button>
-                                <ul class="settings__list">
-                                    <li class="settings__list-item">
+                                <ul class="settings__value-list">
+                                    <li class="settings__value-list-item">
                                         <div class="settings__value">
-                                            Name: <span></span>
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
+                                            <span class="settings__value-header">Name:</span> <span class="settings__changable-field">Vitalii</span>
+                                            <button class="settings__change-value-btn">
+                                                <svg class="settings__icon_correct">
                                                     <use href="./src/img/sprite.svg#icon-pen"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <input class="settings__input" type="text" placeholder="name">
+                                        <input class="settings__change-value-input" type="text" placeholder="name">
                                     </li>
-                                    <li class="settings__list-item">
+                                    <li class="settings__value-list-item">
                                         <div class="settings__value">
-                                            Surename <span></span>:
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
+                                            <span class="settings__value-header">Surename:</span> <span class="settings__changable-field">Drapaliuk</span>
+                                            <button class="settings__change-value-btn">
+                                                <svg class="settings__icon_correct">
                                                     <use href="./src/img/sprite.svg#icon-pen"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <input class="settings__input" type="text" placeholder="surename">
+                                        <input class="settings__change-value-input" type="text" placeholder="surename">
                                     </li>
-                                    <li class="settings__list-item">
+                                    <li class="settings__value-list-item">
                                         <div class="settings__value">
-                                            Birthday <span></span>:
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
+                                            <span class="settings__value-header">Country:</span> <span class="settings__changable-field">Ukraine</span>
+                                            <button class="settings__change-value-btn">
+                                                <svg class="settings__icon_correct">
                                                     <use href="./src/img/sprite.svg#icon-pen"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <input class="settings__input" type="text" placeholder="birthdata">
+                                        <input class="settings__change-value-input" type="text" placeholder="country">
                                     </li>
-                                    <li class="settings__list-item">
+                                    <li class="settings__value-list-item">
                                         <div class="settings__value">
-                                            Country: <span></span>
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
+                                            <span class="settings__value-header">Birthday:</span> <span class="settings__changable-field">16.02.1993</span>
+                                            <button class="settings__change-value-btn">
+                                                <svg class="settings__icon_correct">
                                                     <use href="./src/img/sprite.svg#icon-pen"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <input class="settings__input" type="text" placeholder="country">
-                                    </li>
-                                    <li class="settings__list-item">
-                                        <div class="settings__value">
-                                            City:<span></span>
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
-                                                    <use href="./src/img/sprite.svg#icon-pen"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <input class="settings__input" type="text" placeholder="city">
+                                        <input class="settings__change-value-input" type="text" placeholder="birthday">
                                     </li>
                                 </ul>
                             </li>
                             <li class="settings__part">
-                                <button class="settings__open-part-btn">
+                                <button class="settings__part-btn">
                                     <span class="settings__part-name-wrapper">
-                                        <svg class="icon">
+                                        <svg class="settings__icon_part_name">
                                             <use href="./src/img/sprite.svg#icon-key"></use>
                                         </svg>
                                         <span class="settings__part-name">Security</span>
                                     </span>
-                                    <svg class="icon">
+                                    <svg class="settings__icon_open-status">
                                         <use href="./src/img/sprite.svg#icon-down-arrow"></use>
                                         <use href="./src/img/sprite.svg#icon-up-arrow"></use>
-
                                     </svg>
                                 </button>
-                                <ul class="settings__list">
-                                    <li class="settings__list-item">
+                                <ul class="settings__value-list">
+                                    <li class="settings__value-list-item">
                                         <button class="settings__change-password-btn">Change password</button>
-                                        <input class="settings__input security-input" type="password"
-                                            placeholder="old password">
-                                        <input class="settings__input security-input" type="password"
-                                            placeholder="new password">
-                                        <input class="settings__input security-input" type="password"
-                                            placeholder="new password">
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="old password">
+
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="new password">
+
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="new password">
 
                                     </li>
-                                    <li class="settings__list-item">
+                                    <li class="settings__value-list-item">
                                         <div class="settings__value">
-                                            Phone number: <span>+380689308684</span>
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
+                                            <span class="settings__value-header">Phone:</span> <span class="settings__changable-field">+380689308684</span>
+                                            <button class="settings__change-value-btn">
+                                                <svg class="settings__icon_correct">
                                                     <use href="./src/img/sprite.svg#icon-pen"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <input class="settings__input security-input" type="text"
-                                            placeholder="old phone">
-                                        <input class="settings__input security-input" type="text"
-                                            placeholder="new phone">
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="old phone">
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="new phone">
                                     </li>
-                                    <li class="settings__list-item">
+                                    <li class="settings__value-list-item">
                                         <div class="settings__value">
-                                            Email: <span>vitaliidrapaliuk@gmail.com</span>
-                                            <button class="settings__change-btn">
-                                                <svg class="icon--medium-size">
+                                            <span class="settings__value-header">Email:</span> <span class="settings__changable-field">vitaliidrapaliuk</span>
+                                            <button class="settings__change-value-btn">
+                                                <svg class="settings__icon_correct">
                                                     <use href="./src/img/sprite.svg#icon-pen"></use>
                                                 </svg>
                                             </button>
                                         </div>
-                                        <input class="settings__input security-input" type="text"
-                                            placeholder="old email">
-                                        <input class="settings__input security-input" type="text"
-                                            placeholder="new email">
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="old email">
+                                        <input
+                                            class="settings__change-value-input settings__change-value-input_security_parts"
+                                            type="text" placeholder="new email">
                                     </li>
                                 </ul>
                             </li>
                             <li class="settings__part">
-                                <button class="settings__open-part-btn">
+                                <button class="settings__part-btn">
                                     <span class="settings__part-name-wrapper">
-                                        <svg class="icon">
+                                        <svg class="settings__icon_part_name">
                                             <use href="./src/img/sprite.svg#icon-translation"></use>
                                         </svg>
                                         <span class="settings__part-name">Language</span>
                                     </span>
-                                    <svg class="icon">
+                                    <svg class="settings__icon_open-status">
                                         <use href="./src/img/sprite.svg#icon-down-arrow"></use>
                                         <use href="./src/img/sprite.svg#icon-up-arrow"></use>
                                     </svg>
                                 </button>
-                                <ul class="settings__list">
-                                    <li class="settings__list-item">
-                                        <div class="selected-language">
+                                <ul class="settings__value-list">
+                                    <li class="settings__value-list-item">
+                                        <div class="settings__selected-language">
                                             English
-                                            <svg class="icon">
+                                            <svg class="settings__icon_part_name settings__icon_selected_language">
                                                 <use href="./src/img/sprite.svg#icon-united-kingdom"></use>
                                             </svg>
                                         </div>
-                                        <ul class="languages__list">
-                                            <li class="language">
-                                                <button class="language-btn">
-                                                    Ukraine
-                                                    <svg class="icon">
-                                                        <use href="./src/img/sprite.svg#icon-ukraine"></use>
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                        </ul>
-
-
+                                        <button class="settings__language-btn">
+                                            Ukraine
+                                            <svg class="settings__icon_language_btn">
+                                                <use href="./src/img/sprite.svg#icon-ukraine"></use>
+                                            </svg>
+                                        </button>
                                     </li>
                                 </ul>
                             </li>
@@ -962,7 +953,7 @@
 
 
 
-<!-- .todo-full-info
+                <!-- .todo-full-info
 .todo-full-text
 __check-todo = full-info-check-todo
 __text =todo-change-text
@@ -999,7 +990,8 @@ __
                     <div class="todo-full-text">
                         <input type="checkbox" class="todo-full-text__check-input-todo">
                         <textarea class="todo-full-text__text" name="" placeholder="fulltext"></textarea>
-                        <button class="todo-full-text__importantly-btn importantly-btn importantly-btn_todo importantly-btn_active">
+                        <button
+                            class="todo-full-text__importantly-btn importantly-btn importantly-btn_todo importantly-btn_active">
                             <svg class="todo-full-text__icon importantly-btn__icon">
                                 <use href="./src/img/sprite.svg#icon-star"></use>
                             </svg>
@@ -1013,8 +1005,9 @@ __
                                     <svg class="todo-due-date__icon todo-remind__icon">
                                         <use href="./src/img/sprite.svg#icon-calendara_bw"></use>
                                     </svg>
-                                    <input class="todo-due-date__input todo-remind__input" placeholder="Встановити термін">
-                                   
+                                    <input class="todo-due-date__input todo-remind__input"
+                                        placeholder="Встановити термін">
+
                                     <button class="delete-btn delete-btn_todo_time_option">
                                         <svg class="delete-btn__icon">
                                             <use href="./src/img/sprite.svg#icon-cancel"></use>
@@ -1038,7 +1031,7 @@ __
                             </li>
                         </ul>
 
-                        
+
 
 
                         <div class="todo-subtasks">
@@ -1057,7 +1050,7 @@ __
                                             </svg>
                                         </button>
                                     </div>
-                                    
+
                                 </li>
                                 <li class="todo-subtasks__list-item">
                                     <div class="todo-subtask">
@@ -1074,7 +1067,7 @@ __
                         </div>
 
                         <textarea class="todo-note" name="" id="" cols="30" rows="10" placeholder="Add note"></textarea>
-                        
+
                         <ul class="todo-comments-list">
                             <li class="todo-comments-list__item">
                                 <div class="todo-comment">

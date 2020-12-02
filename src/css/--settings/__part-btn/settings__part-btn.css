@@ -1,0 +1,10 @@
+.settings__part-btn {
+  width: 100%;
+  padding: 6px 15px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #c2bbbb;
+  box-shadow: 0 0 10px #c9c5c5;
+  border-radius: 4px; }

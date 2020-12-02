@@ -1,0 +1,5 @@
+.settings.settings_theme_dark {
+  background-color: rgba(123, 142, 142, 0.9); }
+
+.settings.settings_theme_dark * {
+  box-shadow: none; }

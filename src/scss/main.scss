@@ -9,7 +9,7 @@
 // @import './todo_full_info/subtasks.scss';
 // @import './todo_full_info/note.scss';
 
-@import './settings/settings.scss';
+// @import './settings/settings.scss';
 @import './bar/notification.scss';
 @import './icons.scss';
 @import './auth/auth.scss';
@@ -185,6 +185,14 @@
 @import './--settings/_open_status/settings__icon_open-status.scss';
 @import './--settings/_part_name/settings__icon_part_name.scss';
 @import './--settings/_theme_dark/settings_theme_dark.scss';
-
-
-
+@import './--settings/__part-btn/settings__part-btn.scss';
+@import './--settings/__values-list/settings__value-list';
+@import './--settings/__value-list-item/settings__value-list-item';
+@import './--settings/__change-value-btn/settings__change-value-btn.scss';
+@import './--settings/_security_part/settings__change-value-input_security_parts.scss';
+@import './--settings/__language-btn/settings__language-btn.scss';
+@import './--settings/_language_btn/settings__icon_language_btn.scss';
+@import './--settings/__selected-language/settings__selected-language.scss';
+@import './--settings/_selected_language/settings__icon_selected_language.scss';
+@import './--settings/__changable-field/settings__changable-field.scss';
+@import './--settings/__value-header/settings__value-header.scss';

@@ -8,5 +8,6 @@
   position: relative; }
   @media (max-width: 767px) {
     .bar-section {
+      display: none;
       padding-top: 80px;
       padding-bottom: 120px; } }
