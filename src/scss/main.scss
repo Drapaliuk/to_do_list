@@ -34,11 +34,29 @@
 @import './--bar/todo-list-label/__name/todo-list-label__name.scss';
 @import './--bar/todo-list-label/__task-amount/todo-list-label__task-amount.scss';
 @import './--bar/todo-list-label/_with_correct_btn/todo-lists-label_with_correct_btn.scss';
+@import './--bar/bar-section/_folder_wrapper/bar-section__labels-list-item_folder_wrapper.scss';
 
 @import './--bar/todo-lists-folder/todo-lists-folder.scss';
 @import './--bar/todo-lists-folder/__create-new/todo-lists-folder__create-new.scss';
 @import './--bar/todo-lists-folder/__inner-list/todo-lists-folder__inner-list.scss';
+@import './--bar/todo-list-label/_star_active/bar-section__icon_star_active.scss';
 
+
+@import './--bar/edit-list-label/edit-list-label.scss';
+@import './--bar/edit-list-label/__delete-todo-list/edit-list-label__delete-todo-list.scss';
+@import './--bar/edit-list-label/__done-btn/edit-list-label__done-btn.scss';
+@import './--bar/edit-list-label/__dont-disturbe-btn/edit-list-label__dont-disturbe-btn.scss';
+@import './--bar/edit-list-label/__dont-disturbe-input/edit-list-label__dont-disturbe-input.scss';
+@import './--bar/edit-list-label/__footer/edit-list-label__footer.scss';
+@import './--bar/edit-list-label/__header/edit-list-label__header.scss';
+@import './--bar/edit-list-label/__icon/edit-list-label__icon.scss';
+@import './--bar/edit-list-label/__new-name/edit-list-label__new-name.scss';
+@import './--bar/edit-list-label/__options-list-item/edit-list-label__options-list-item.scss';
+@import './--bar/edit-list-label/__options-list/edit-list-label__options-list.scss';
+@import './--bar/edit-list-label/__results-btns/edit-list-label__results-btn.scss';
+@import './--bar/edit-list-label/_cancel/edit-list-label__results-btn_cancel.scss';
+@import './--bar/edit-list-label/_done/edit-list-label__results-btn_done.scss';
+@import './--bar/edit-list-label/_theme_dark/edit-list-label_theme-dark.scss';
 
 // @import '';
 // @import '';

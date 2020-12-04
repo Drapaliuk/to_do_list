@@ -7,7 +7,7 @@
 }
 
 .bar-section.bar-section_theme_dark .bar-section__labels-list-item {
-    border-bottom: 1px solid rgb(82, 79, 79)
+    // border-bottom: 1px solid rgb(82, 79, 79)
 }
 
 .bar-section.bar-section_theme_dark .bar-section__add-new-folder-btn {
@@ -19,6 +19,15 @@
     background-color:#706b6b;
     &::placeholder {
       color: #d1c3c3;
+    }
+}
+
+.bar-section.bar-section_theme_dark .todo-lists-folder__create-new {
+    background-color: transparent;
+    border: 1px solid gray;
+    color: #d1c3c3;
+    &:hover {
+        background-color: transparent;
     }
 }
 

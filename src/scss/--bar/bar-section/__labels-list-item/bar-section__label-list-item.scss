@@ -5,4 +5,10 @@
     &:hover {
         background-color:hsla(208, 88%, 56%, .65);
     }
+
+    @media (max-width: 767px) {
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }

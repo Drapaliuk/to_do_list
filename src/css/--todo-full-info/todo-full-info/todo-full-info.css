@@ -6,6 +6,6 @@
   overflow: auto; }
   @media (max-width: 767px) {
     .todo-full-info {
-      display: none;
       padding-bottom: 0;
-      position: static; } }
+      position: static;
+      margin-bottom: 50px; } }

@@ -8,7 +8,6 @@
     outline: none;
     border: none;
     background-color: transparent;
-    // outline: 1px solid red;
     z-index: 999999999999;
     padding: 0;
     cursor: pointer;
@@ -16,9 +15,6 @@
     transition: all .3s linear;
     @media (max-width: 767px) {
         padding-right: 20px;
-    }
-
-    &:active {
-        background-color: red;
+        display: none;
     }
 }

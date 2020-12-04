@@ -1,0 +1,18 @@
+.edit-list-label {
+    max-width: 300px;
+    width: 100%;
+    background-color: hsla(180, 8%, 83%, 0.9);
+    padding-top: 15px;
+    // position: absolute;
+    position: fixed;
+
+    color: #000;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgb(153, 151, 151);
+    z-index: 99999;
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

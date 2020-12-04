@@ -1,0 +1,15 @@
+.edit-list-label {
+  max-width: 300px;
+  width: 100%;
+  background-color: rgba(208, 215, 215, 0.9);
+  padding-top: 15px;
+  position: fixed;
+  color: #000;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #999797;
+  z-index: 99999; }
+  @media (max-width: 767px) {
+    .edit-list-label {
+      display: none; } }
